@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 type CardProps = {
   title: string;
@@ -18,7 +19,7 @@ const Card: React.FC<CardProps> = ({
         className="h-72 flex-none overflow-hidden rounded-t bg-cover text-center lg:h-auto lg:w-48 lg:rounded-l lg:rounded-t-none"
         title="Woman holding a mug"
       >
-        <img src={image} alt="" />
+        <Image src={image} width={300} height={500} quality={80} alt="" />
       </div>
       <div className="flex flex-col justify-between p-4 leading-normal">
         <div className="mb-8">

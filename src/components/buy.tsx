@@ -5,7 +5,7 @@ function Buy() {
     <>
       <button
         type="button"
-        className="mr-2 inline-flex items-center rounded-lg bg-[#3C6255] px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-800"
+        className="mr-2 inline-flex items-center rounded-lg bg-[#3C6255] px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-emerald-800 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-800"
       >
         <svg
           className="mr-2 h-3.5 w-3.5"

@@ -55,7 +55,7 @@ export default function HomePage() {
           <Buy />
         </section>
         <section className="container grid grid-cols-[15px_1fr] gap-2">
-          <Line f={"a"} s={"b"} />
+          <Line f={"a"} s={"b"} i={"icon1"} />
           <div className="relative grid grid-flow-row gap-5 pl-4 md:grid-cols-2">
             <div className="flex max-w-[320px] flex-col gap-2 self-start md:sticky md:top-8 md:max-w-[500px]">
               <h2 className="text-start text-4xl font-bold md:text-5xl">
@@ -118,7 +118,7 @@ export default function HomePage() {
               <Card
                 title="Юлія Бельмас"
                 description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,"
-                image="/e.heic"
+                image="/e.jpg"
                 instagram="@yu_belmas"
               />
             </div>
@@ -143,7 +143,7 @@ export default function HomePage() {
           <Countdown />
         </section>
         <section className="container grid grid-cols-[15px_1fr] gap-2">
-          <Line f={"c"} s={"d"} />
+          <Line f={"c"} s={"d"} i={"icon2"} />
           <div className="relative flex flex-col gap-5 pl-4">
             <div className="flex max-w-[320px] flex-col gap-2 self-start md:max-w-[500px]">
               <h2 className="text-start text-4xl font-bold md:text-5xl">

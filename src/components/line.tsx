@@ -10,12 +10,22 @@ const colors = {
   b: "from-emerald-500 to-sky-500",
   c: "from-amber-400 to-rose-500",
   d: "from-rose-500 to-amber-400",
+  icon1: "bg-emerald-400",
+  icon2: "bg-amber-500",
 };
 
-const Line = ({ f, s }: { f: keyof typeof colors; s: keyof typeof colors }) => {
+const Line = ({
+  f,
+  s,
+  i,
+}: {
+  f: keyof typeof colors;
+  s: keyof typeof colors;
+  i: keyof typeof colors;
+}) => {
   const ref = useRef<HTMLDivElement>(null);
   const element = useIntersectionObserver(ref, {
-    threshold: 0.1,
+    threshold: 0.2,
   });
   const isIntersecting = element?.isIntersecting;
   return (
@@ -29,6 +39,7 @@ const Line = ({ f, s }: { f: keyof typeof colors; s: keyof typeof colors }) => {
         style={{
           transform: isIntersecting ? "scaleY(1)" : "scaleY(0)",
           transformOrigin: "0 0",
+          transitionDelay: isIntersecting ? "0ms" : "999ms",
         }}
       />
       <div
@@ -39,7 +50,12 @@ const Line = ({ f, s }: { f: keyof typeof colors; s: keyof typeof colors }) => {
           transitionTimingFunction: "cubic-bezier(0.4, 0, 0.2, 1)",
         }}
       >
-        <span className="absolute top-0 block h-full w-full scale-125 rounded-2xl bg-emerald-400 blur-xl" />
+        <span
+          className={cn(
+            "absolute top-0 block h-full w-full scale-125 rounded-2xl blur-xl",
+            colors[i],
+          )}
+        />
         <svg
           className="relative z-40 fill-white stroke-violet-800"
           width="24"
