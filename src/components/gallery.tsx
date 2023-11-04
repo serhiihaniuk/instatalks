@@ -1,31 +1,31 @@
 const Gallery = () => {
   return (
-    <div className="grid grid-cols-1 gap-2 md:grid-cols-2">
-      <div>
+    <div className="grid grid-cols-1 grid-rows-[300px_300px] gap-2 md:grid-cols-[50%_50%]">
+      <div className="relative overflow-hidden rounded-3xl">
         <img
-          className="h-auto max-w-full rounded-lg"
-          src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg"
+          className="absolute inset-0 object-contain"
+          src="/dec1.jpg"
           alt=""
         />
       </div>
-      <div>
+      <div className="relative overflow-hidden rounded-3xl">
         <img
-          className="h-auto max-w-full rounded-lg"
-          src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg"
+          className="absolute inset-0 h-full w-full object-cover"
+          src="/dec2.jpg"
           alt=""
         />
       </div>
-      <div>
+      <div className="relative overflow-hidden rounded-3xl">
         <img
-          className="h-auto max-w-full rounded-lg"
-          src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg"
+          className="absolute inset-0 h-full w-full object-cover"
+          src="/dec2.jpg"
           alt=""
         />
       </div>
-      <div>
+      <div className="relative overflow-hidden rounded-3xl">
         <img
-          className="h-auto max-w-full rounded-lg"
-          src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg"
+          className="absolute inset-0 h-full w-full object-cover"
+          src="/dec1.jpg"
           alt=""
         />
       </div>

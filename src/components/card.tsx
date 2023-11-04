@@ -1,31 +1,35 @@
 import React from "react";
 
-const Card = () => {
+type CardProps = {
+  title: string;
+  description: string;
+  image: string;
+  instagram: string;
+};
+const Card: React.FC<CardProps> = ({
+  title,
+  description,
+  image,
+  instagram,
+}) => {
   return (
     <div className="w-full max-w-full overflow-hidden rounded-2xl border border-gray-200 bg-white lg:flex lg:max-w-full">
       <div
         className="h-48 flex-none overflow-hidden rounded-t bg-cover text-center lg:h-auto lg:w-48 lg:rounded-l lg:rounded-t-none"
         style={{
-          backgroundImage:
-            "url('https://v1.tailwindcss.com/img/card-left.jpg')",
+          backgroundImage: `url(${image})`,
         }}
         title="Woman holding a mug"
       />
       <div className="flex flex-col justify-between p-4 leading-normal">
         <div className="mb-8">
-          <div className="mb-2 text-xl font-bold text-gray-900">
-            Yulia Putintseva
-          </div>
-          <p className="text-base text-gray-700">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Voluptatibus quia, nulla! Maiores et perferendis eaque,
-            exercitationem praesentium nihil.
-          </p>
+          <div className="mb-2 text-xl font-bold text-gray-900">{title}</div>
+          <p className="text-base text-gray-700">{description}</p>
         </div>
         <div className="flex items-center">
           <div className="flex items-center justify-center gap-2 text-sm">
             <InstagramIcon />
-            <p className="leading-none underline">Jonathan Reinink</p>
+            <p className="leading-none underline">{instagram}</p>
           </div>
         </div>
       </div>

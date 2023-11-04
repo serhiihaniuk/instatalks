@@ -91,9 +91,36 @@ export default function HomePage() {
               </p>
             </div>
             <div className="grid grid-rows-3 gap-5">
-              <Card />
-              <Card />
-              <Card />
+              <Card
+                title="Анастасія Лісова"
+                description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,"
+                image="/1.jpg"
+                instagram="@anastasia_lisova"
+              />
+              <Card
+                title="Олена Виконанська"
+                description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,"
+                image="/2.jpg"
+                instagram="@elena_vikonanska"
+              />
+              <Card
+                title="Ольга Фурман"
+                description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,"
+                image="/3.jpg"
+                instagram="@olga_furman"
+              />
+              <Card
+                title="Катерина Назаренко"
+                description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,"
+                image="/4.jpg"
+                instagram="@katerina_nazarenko"
+              />
+              <Card
+                title="Юлія Бельмас"
+                description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,"
+                image="/5.HEIC"
+                instagram="@yu_belmas"
+              />
             </div>
           </div>
         </section>
