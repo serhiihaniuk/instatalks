@@ -1,0 +1,55 @@
+import React from "react";
+
+const Card = () => {
+  return (
+    <div className="w-full max-w-full overflow-hidden rounded-2xl border border-gray-200 bg-white lg:flex lg:max-w-full">
+      <div
+        className="h-48 flex-none overflow-hidden rounded-t bg-cover text-center lg:h-auto lg:w-48 lg:rounded-l lg:rounded-t-none"
+        style={{
+          backgroundImage:
+            "url('https://v1.tailwindcss.com/img/card-left.jpg')",
+        }}
+        title="Woman holding a mug"
+      />
+      <div className="flex flex-col justify-between p-4 leading-normal">
+        <div className="mb-8">
+          <div className="mb-2 text-xl font-bold text-gray-900">
+            Yulia Putintseva
+          </div>
+          <p className="text-base text-gray-700">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Voluptatibus quia, nulla! Maiores et perferendis eaque,
+            exercitationem praesentium nihil.
+          </p>
+        </div>
+        <div className="flex items-center">
+          <div className="flex items-center justify-center gap-2 text-sm">
+            <InstagramIcon />
+            <p className="leading-none underline">Jonathan Reinink</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+const InstagramIcon = () => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    className="lucide lucide-instagram"
+  >
+    <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+    <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+  </svg>
+);
+
+export default Card;
