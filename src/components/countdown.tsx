@@ -10,6 +10,20 @@ type TimeLeft = {
   секунди?: number;
 };
 
+// Utility function to determine the correct Ukrainian word based on the number
+const getUkrainianWord = (
+  number: number,
+  words: [string, string, string],
+): string => {
+  const cases = [2, 0, 1, 1, 1, 2];
+  return words[
+    // @ts-ignore
+    number % 100 > 4 && number % 100 < 20
+      ? 2
+      : cases[number % 10 < 5 ? number % 10 : 5]
+  ] as unknown as string;
+};
+
 const Countdown = () => {
   const calculateTimeLeft = (): TimeLeft => {
     const difference = +new Date("2023-11-27") - +new Date();
@@ -52,9 +66,18 @@ const Countdown = () => {
       return;
     }
 
+    // Words for each time unit in Ukrainian (singular, few, many)
+    // eslint-disable-next-line @typescript-eslint/consistent-indexed-object-style
+    const wordsMap: { [key: string]: [string, string, string] } = {
+      дні: ["день", "дні", "днів"],
+      години: ["година", "години", "годин"],
+      хвилини: ["хвилина", "хвилини", "хвилин"],
+      секунди: ["секунда", "секунди", "секунд"],
+    };
+
     timerComponents.push(
-      <span key={interval}>
-        {value} {interval}{" "}
+      <span key={interval} className="">
+        {value} {getUkrainianWord(value, wordsMap[interval]!)}{" "}
       </span>,
     );
   });
@@ -63,12 +86,14 @@ const Countdown = () => {
     return null;
   }
 
+  if (!timerComponents.length) {
+    return null;
+  }
+
   return (
-    <div className="flex flex-col items-center justify-center">
-      <div>Залишилось:</div>
-      <div>
-        {timerComponents.length ? timerComponents : <span>Time&aposs up!</span>}
-      </div>
+    <div className="flex flex-col items-center justify-center px-5 text-center">
+      <div className="text-xl font-extrabold text-emerald-900">Залишилось:</div>
+      <div className="text-xl">{timerComponents}</div>
     </div>
   );
 };
