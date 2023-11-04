@@ -16,10 +16,17 @@ const Card: React.FC<CardProps> = ({
   return (
     <div className="w-full max-w-full overflow-hidden rounded-2xl border border-gray-200 bg-white lg:flex lg:max-w-full">
       <div
-        className="h-72 flex-none overflow-hidden rounded-t bg-cover text-center lg:h-auto lg:w-48 lg:rounded-l lg:rounded-t-none"
+        className="relative h-72 flex-none overflow-hidden rounded-t bg-cover text-center lg:h-auto lg:w-48 lg:rounded-l lg:rounded-t-none"
         title="Woman holding a mug"
       >
-        <Image src={image} width={300} height={500} quality={80} alt="" />
+        <Image
+          src={image}
+          width={300}
+          className="absolute inset-0 h-full w-full object-cover"
+          height={500}
+          quality={80}
+          alt=""
+        />
       </div>
       <div className="flex flex-col justify-between p-4 leading-normal">
         <div className="mb-8">
