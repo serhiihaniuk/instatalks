@@ -15,12 +15,11 @@ const Card: React.FC<CardProps> = ({
   return (
     <div className="w-full max-w-full overflow-hidden rounded-2xl border border-gray-200 bg-white lg:flex lg:max-w-full">
       <div
-        className="h-48 flex-none overflow-hidden rounded-t bg-cover text-center lg:h-auto lg:w-48 lg:rounded-l lg:rounded-t-none"
-        style={{
-          backgroundImage: `url(${image})`,
-        }}
+        className="h-72 flex-none overflow-hidden rounded-t bg-cover text-center lg:h-auto lg:w-48 lg:rounded-l lg:rounded-t-none"
         title="Woman holding a mug"
-      />
+      >
+        <img src={image} alt="" />
+      </div>
       <div className="flex flex-col justify-between p-4 leading-normal">
         <div className="mb-8">
           <div className="mb-2 text-xl font-bold text-gray-900">{title}</div>

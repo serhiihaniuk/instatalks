@@ -15,7 +15,7 @@ const colors = {
 const Line = ({ f, s }: { f: keyof typeof colors; s: keyof typeof colors }) => {
   const ref = useRef<HTMLDivElement>(null);
   const element = useIntersectionObserver(ref, {
-    threshold: 0.2,
+    threshold: 0.1,
   });
   const isIntersecting = element?.isIntersecting;
   return (
