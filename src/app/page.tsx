@@ -94,31 +94,31 @@ export default function HomePage() {
               <Card
                 title="Анастасія Лісова"
                 description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,"
-                image="/1.jpg"
+                image="/a.jpg"
                 instagram="@anastasia_lisova"
               />
               <Card
                 title="Олена Виконанська"
                 description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,"
-                image="/2.jpg"
+                image="/b.jpg"
                 instagram="@elena_vikonanska"
               />
               <Card
                 title="Ольга Фурман"
                 description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,"
-                image="/3.jpg"
+                image="/c.jpg"
                 instagram="@olga_furman"
               />
               <Card
                 title="Катерина Назаренко"
                 description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,"
-                image="/4.jpg"
+                image="/d.jpg"
                 instagram="@katerina_nazarenko"
               />
               <Card
                 title="Юлія Бельмас"
                 description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,"
-                image="/5.HEIC"
+                image="/e.heic"
                 instagram="@yu_belmas"
               />
             </div>
