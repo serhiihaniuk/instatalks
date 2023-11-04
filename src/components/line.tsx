@@ -35,7 +35,7 @@ const Line = ({ f, s }: { f: keyof typeof colors; s: keyof typeof colors }) => {
         className="relative flex h-8 w-8 items-center justify-center"
         style={{
           opacity: isIntersecting ? 1 : 0,
-          transitionDelay: isIntersecting ? "600ms" : "0ms",
+          transitionDelay: isIntersecting ? "600ms" : "800ms",
           transitionTimingFunction: "cubic-bezier(0.4, 0, 0.2, 1)",
         }}
       >
@@ -65,8 +65,8 @@ const Line = ({ f, s }: { f: keyof typeof colors; s: keyof typeof colors }) => {
         style={{
           transform: isIntersecting ? "scaleY(1)" : "scaleY(0)",
           transformOrigin: "0 0",
-          transitionDelay: isIntersecting ? "900ms" : "0ms",
-          transitionDuration: isIntersecting ? "500ms" : "100ms",
+          transitionDelay: isIntersecting ? "900ms" : "800ms",
+          transitionDuration: isIntersecting ? "500ms" : "600ms",
         }}
       />
     </div>
