@@ -97,7 +97,7 @@ export default function HomePage() {
             </div>
           </div>
         </section>
-        <section className="flex flex-col items-center justify-center gap-7 md:py-20">
+        <section className="relative flex flex-col items-center justify-center gap-7 md:py-20">
           <h2 className="block max-w-[720px] px-5 text-center text-4xl font-extrabold md:text-5xl">
             Розкрийте{" "}
             <span className="animate-gradient-x bg-gradient-to-r from-pink-500 to-violet-500 bg-clip-text text-transparent">
@@ -112,6 +112,7 @@ export default function HomePage() {
             voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Quisquam,
           </p>
+          <div className="-z-1 absolute left-[20%] top-0 h-[44%] w-[25%] rounded-[100%] bg-gradient-to-r from-cyan-500 to-pink-500 opacity-10 blur-xl" />
           <Countdown />
         </section>
         <section className="container grid grid-cols-[15px_1fr] gap-2">
