@@ -135,7 +135,7 @@ export default function HomePage() {
             <Gallery />
           </div>
         </section>
-        <section className="container grid grid-rows-1 items-center justify-center justify-items-center gap-5 px-5 md:grid-cols-2 ">
+        <section className="container grid grid-rows-1 items-center justify-center justify-items-center gap-5 px-5 md:grid-cols-2 md:pt-12 ">
           <div className="flex max-w-[320px] flex-col items-center justify-center gap-2 self-start md:max-w-[500px]">
             <h2 className="text-center text-2xl font-bold md:text-2xl">
               Напишіть нам
@@ -148,7 +148,7 @@ export default function HomePage() {
           </div>
           <Contact />
         </section>
-        <section className="container grid grid-rows-1 items-center justify-center justify-items-center gap-5 px-5 md:grid-cols-2 ">
+        <section className="container grid grid-rows-1 items-center justify-center justify-items-center gap-5 px-5 md:grid-cols-2 md:pb-12 ">
           <div className="flex max-w-[320px] flex-col items-center justify-center gap-2 self-start md:max-w-[500px]">
             <h2 className="text-center text-2xl font-bold md:text-start md:text-2xl">
               Як нас знайти
