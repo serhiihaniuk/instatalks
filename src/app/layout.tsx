@@ -3,13 +3,13 @@ import "~/styles/globals.css";
 import { Inter } from "next/font/google";
 
 const inter = Inter({
-  subsets: ["cyrillic", "cyrillic-ext"],
+  subsets: ["cyrillic", "cyrillic-ext", "latin"],
   variable: "--font-sans",
 });
 
 export const metadata = {
-  title: "Insta talks",
-  description: "Insta talks",
+  title: "Nail Moment",
+  description: "Nail Moment",
 };
 
 export default function RootLayout({
