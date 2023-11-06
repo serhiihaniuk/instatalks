@@ -287,7 +287,7 @@ export default function HomePage() {
                 <ul className="space-y-5">
                   <li>🗓 26 ноября</li>
                   <li>⏰ 10:00-19:00</li>
-                  <li>📌 ZADN Centrum Konferencyjne </li>
+                  <li>📌 ADN Centrum Konferencyjne </li>
                   <li>
                     <a
                       className="flex items-center justify-start gap-1"
