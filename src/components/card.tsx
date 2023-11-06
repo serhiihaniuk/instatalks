@@ -6,15 +6,17 @@ type CardProps = {
   description: string;
   image: string;
   instagram: string;
+  ticktok?: string;
 };
 const Card: React.FC<CardProps> = ({
   title,
   description,
   image,
   instagram,
+  ticktok,
 }) => {
   return (
-    <div className="w-full max-w-full overflow-hidden rounded-2xl border border-gray-200 bg-white lg:flex lg:max-w-full">
+    <div className="bg-gradient w-full max-w-full overflow-hidden rounded-2xl bg-bottom text-white md:bg-top lg:flex lg:max-w-full">
       <div
         className="relative h-72 flex-none overflow-hidden rounded-t bg-cover text-center lg:h-auto lg:w-48 lg:rounded-l lg:rounded-t-none"
         title="Woman holding a mug"
@@ -30,14 +32,20 @@ const Card: React.FC<CardProps> = ({
       </div>
       <div className="flex flex-col justify-between p-4 leading-normal">
         <div className="mb-8">
-          <div className="mb-2 text-xl font-bold text-gray-900">{title}</div>
-          <p className="text-base text-gray-700">{description}</p>
+          <div className="font-base mb-2 text-lg">{title}</div>
+          <p className="text-base font-thin">{description}</p>
         </div>
-        <div className="flex items-center">
+        <div className="flex items-center gap-3">
           <div className="flex items-center justify-center gap-2 text-sm">
             <InstagramIcon />
-            <p className="leading-none underline">{instagram}</p>
+            <p className="leading-none">{instagram}</p>
           </div>
+          {ticktok && (
+            <div className="flex items-center justify-center gap-2 text-sm">
+              <TiktokIcon />
+              <p className="leading-none">{ticktok}</p>
+            </div>
+          )}
         </div>
       </div>
     </div>
@@ -63,4 +71,28 @@ const InstagramIcon = () => (
   </svg>
 );
 
+const TiktokIcon = () => (
+  <svg
+    width="30px"
+    height="30px"
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M21 8V16C21 18.7614 18.7614 21 16 21H8C5.23858 21 3 18.7614 3 16V8C3 5.23858 5.23858 3 8 3H16C18.7614 3 21 5.23858 21 8Z"
+      stroke="#fff"
+      stroke-width="1.7"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+    <path
+      d="M10 12C8.34315 12 7 13.3431 7 15C7 16.6569 8.34315 18 10 18C11.6569 18 13 16.6569 13 15V6C13.3333 7 14.6 9 17 9"
+      stroke="#fff"
+      stroke-width="1.4"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+  </svg>
+);
 export default Card;

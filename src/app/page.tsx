@@ -5,6 +5,9 @@ import Countdown from "~/components/countdown";
 import Gallery from "~/components/gallery";
 import Line from "~/components/line";
 import GoogleMap from "~/components/map";
+import Image from "next/image";
+import { colors } from "tailwindcss/defaultTheme";
+import { cn } from "~/utils";
 
 export default function HomePage() {
   const slogan = ["Краса.", "Стиль.", "Бізнес."];
@@ -15,117 +18,197 @@ export default function HomePage() {
         backgroundRepeat: "no-repeat",
         backgroundPosition: "bottom",
       }}
-      className="bg-pattern flex min-h-screen flex-col items-center justify-center pb-6 "
+      className="bg-pattern relative flex min-h-screen flex-col items-center justify-center pb-6 text-white "
     >
+      <div className="bg-stars pointer-events-none absolute left-0 top-0 z-20 h-[750px] w-full bg-cover bg-center bg-no-repeat" />
       <div className="bg-pattern flex w-full flex-col gap-12 bg-[center_top_1rem] bg-no-repeat">
-        <section className="container flex min-h-screen flex-col items-center justify-center gap-5">
-          <h1 className="flex w-full select-none text-center text-8xl font-extrabold leading-none tracking-tighter max-lg:flex-col max-sm:text-[68px]">
-            <span
-              data-content={slogan[0]}
-              className="before:animate-gradient-background-1 relative block before:absolute before:inset-y-0 before:left-0 before:z-0 before:block before:w-full before:px-2 before:text-center before:text-black before:content-[attr(data-content)]"
-            >
-              <span className="animate-gradient-foreground-1 from-gradient-blue to-gradient-teal bg-gradient-to-r bg-clip-text px-2 text-transparent">
-                {slogan[0]}
-              </span>
-            </span>
-            <span
-              data-content={slogan[1]}
-              className="before:animate-gradient-background-2 relative block before:absolute before:inset-y-0 before:left-0 before:z-0 before:block before:w-full before:px-2 before:text-center before:text-black before:content-[attr(data-content)]"
-            >
-              <span className="animate-gradient-foreground-2 from-gradient-purple to-gradient-pink bg-gradient-to-r bg-clip-text px-2 text-transparent">
-                {slogan[1]}
-              </span>
-            </span>
-            <span
-              data-content={slogan[2]}
-              className="before:animate-gradient-background-3 relative block before:absolute before:inset-y-0 before:left-0 before:z-0 before:block before:w-full before:px-2 before:text-center before:text-black before:content-[attr(data-content)]"
-            >
-              <span className="animate-gradient-foreground-3 from-gradient-red to-gradient-yellow bg-gradient-to-r bg-clip-text px-2 text-transparent">
-                {slogan[2]}
-              </span>
-            </span>
+        <section className="container flex min-h-screen flex-col items-center justify-center gap-5 bg-top">
+          <div>
+            <Image src="/main_logo.png" alt="" width={300} height={300} />
+          </div>
+          <h1 className="text-2xl font-normal text-white">
+            Конференция для мастеров маникюра и педикюра!
           </h1>
-          <h2 className="text-center text-2xl md:text-4xl">
-            Розкрийте{" "}
-            <span className="animate-gradient-x bg-gradient-to-r from-pink-500 to-violet-500 bg-clip-text text-transparent">
-              потенціал
-            </span>{" "}
-            краси вашого бізнесу з кожним кліком
-          </h2>
-          <Buy />
+          <p className="max-w-[520px] text-center text-lg font-thin">
+            <span className="font-normal">🔥Nail Moment 2023🔥</span> - это
+            конференция на которой ты узнаешь последнюю, трендовую информацию
+            ногтевого мира, вдохновишся и поднимешь свои знания на новый
+            уровень. Мы объединили самые актуальные темы, которые не может
+            пропустить ни один nail мастер.{" "}
+          </p>
         </section>
         <section className="container grid grid-cols-[15px_1fr] gap-2">
-          <Line f={"a"} s={"b"} i={"icon1"} />
+          <Line f={"c"} s={"d"} i={"icon2"} />
           <div className="relative grid grid-flow-row gap-5 pl-4 md:grid-cols-2">
             <div className="flex max-w-[320px] flex-col gap-2 self-start md:sticky md:top-8 md:max-w-[500px]">
-              <h2 className="text-start text-4xl font-bold md:text-5xl">
-                Розкрийте{" "}
-                <span className="animate-gradient-x bg-gradient-to-r from-sky-500 to-emerald-500 bg-clip-text text-transparent">
-                  потенціал
+              <h2 className="text-start text-3xl font-bold md:text-4xl">
+                Темы{" "}
+                <span
+                  className={cn(
+                    "absolute top-0 block h-7 w-7 scale-125 rounded-2xl bg-amber-100 blur-xl",
+                  )}
+                />
+                <span className="animate-gradient-x bg-gradient-to-r from-amber-500 to-orange-500 bg-clip-text text-transparent">
+                  конференции
                 </span>{" "}
-                краси
               </h2>
-              <p className="text-start text-lg font-light text-black md:text-xl">
-                {" "}
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Quisquam,
-              </p>
-              <p className="text-start text-lg font-light text-black md:text-xl">
-                {" "}
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Quisquam,
-              </p>
-              <p className="text-start text-lg font-light text-black md:text-xl">
-                {" "}
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Quisquam,
-              </p>
-              <p className="text-start text-lg font-light text-black md:text-xl">
-                {" "}
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Quisquam,
-              </p>
+              <ul className="list-none space-y-7">
+                <li className="text-start text-base font-light text-gray-100">
+                  <div className="text-lg font-bold text-white">
+                    <div className="flex items-center gap-2 bg-gradient-to-r from-pink-400 to-orange-300 bg-clip-text text-transparent">
+                      Анастасия Коваленко
+                      <svg
+                        className="mr-2 h-3.5 w-3.5 flex-shrink-0 text-green-500 dark:text-green-400"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+                      </svg>
+                    </div>
+                    <a
+                      className="text-sm font-normal text-blue-100"
+                      href="https://instagram.com/kohana__nails"
+                    >
+                      {" "}
+                      @kohana__nails{" "}
+                    </a>
+                  </div>
+                  Мастер Клас по укреплению ногтей твёрдыми материалами
+                </li>
+                <li className="text-start text-base font-light text-gray-100">
+                  <div className="text-lg font-bold text-white">
+                    <div className="flex items-center gap-2 bg-gradient-to-r from-pink-400 to-orange-300 bg-clip-text text-transparent">
+                      Юлия Бельмас
+                      <svg
+                        className="mr-2 h-3.5 w-3.5 flex-shrink-0 text-green-500 dark:text-green-400"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+                      </svg>
+                    </div>
+                    <a
+                      className="text-sm font-normal text-blue-100"
+                      href="https://instagram.com/yuliabelmas"
+                    >
+                      {" "}
+                      @yuliabelmas{" "}
+                    </a>
+                  </div>
+                  Как мастеру маникюра систематизировать свою работу и грамотно
+                  считать финансы
+                </li>
+                <li className="text-start text-base font-light text-gray-100">
+                  <div className="text-lg font-bold text-white">
+                    <div className="flex items-center gap-2 bg-gradient-to-r from-pink-400 to-orange-300 bg-clip-text text-transparent">
+                      Юлия Мартынова
+                      <svg
+                        className="mr-2 h-3.5 w-3.5 flex-shrink-0 text-green-500 dark:text-green-400"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+                      </svg>
+                    </div>
+                    <a
+                      className="text-sm font-normal text-blue-100"
+                      href="https://instagram.com/podoestetyka.waw"
+                    >
+                      @podoestetyka.waw{" "}
+                    </a>
+                  </div>
+                  Онихолизис. Что это такое. В чем опасность. Почему онихолизис
+                  не отрастает. Ошибки в работе с онихолизисом мастера маникюра.
+                  Когда можно протезировать и методы восстановления ногтей.
+                  Тактика ведения клиента.
+                </li>
+                <li className="text-start text-base font-light text-gray-100">
+                  <div className="text-lg font-bold text-white">
+                    <div className="flex items-center gap-2 bg-gradient-to-r from-pink-400 to-orange-300 bg-clip-text text-transparent">
+                      Оля Лягина
+                      <svg
+                        className="mr-2 h-3.5 w-3.5 flex-shrink-0 text-green-500 dark:text-green-400"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+                      </svg>
+                    </div>
+                    <a
+                      className="text-sm font-normal text-blue-100"
+                      href="https://instagram.com/eendi_nails"
+                    >
+                      @eendi_nails
+                    </a>
+                  </div>
+                  Мастер Клас по наращиванию на верхние формы
+                </li>
+                <li className="text-start text-base font-light text-gray-100">
+                  <div className="text-lg font-bold text-white">
+                    <div className="flex items-center gap-2 bg-gradient-to-r from-pink-400 to-orange-300 bg-clip-text text-transparent">
+                      Ангелина Рагоза
+                      <svg
+                        className="mr-2 h-3.5 w-3.5 flex-shrink-0 text-green-500 dark:text-green-400"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+                      </svg>
+                    </div>
+                    <a
+                      className="text-sm font-normal text-blue-100"
+                      href="https://instagram.com/angelina_nail_say"
+                    >
+                      @angelina_nail_say
+                    </a>
+                  </div>
+                  5 секретов высокого прайса
+                </li>
+              </ul>
             </div>
             <div className="grid grid-rows-3 gap-5">
               <Card
-                title="Анастасія Лісова"
-                description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,"
-                image="/a.jpg"
-                instagram="@anastasia_lisova"
-              />
-              <Card
-                title="Олена Виконанська"
-                description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,"
+                title="Анастасия Коваленко"
+                description="Междунарондный инструктор JZ Nails Group."
                 image="/b.jpg"
-                instagram="@elena_vikonanska"
+                instagram="13k"
               />
               <Card
-                title="Ольга Фурман"
-                description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,"
-                image="/c.jpg"
-                instagram="@olga_furman"
-              />
-              <Card
-                title="Катерина Назаренко"
-                description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,"
-                image="/d.jpg"
-                instagram="@katerina_nazarenko"
-              />
-              <Card
-                title="Юлія Бельмас"
+                title="Юлия Бельмас"
                 description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,"
                 image="/e.jpg"
-                instagram="@yu_belmas"
+                instagram="3.7k"
+              />
+              <Card
+                title="Юлия Мартынова"
+                description="Основатель центра подологии Podoestetyka, сооснователь курса старт в подологии. Эксперт в здоровье ногтей."
+                image="/d.jpg"
+                instagram="2.7k"
+              />
+              <Card
+                title="Оля Лягина"
+                description="Я забыла о нижних формах уже более чем на полгода. Не боюсь грызть ногти и с помощью верхних форм могу сделать носибельные ногти без сколов."
+                image="/a.jpg"
+                instagram="4.8k"
+              />
+              <Card
+                title="Ангелина Рагоза"
+                description="Самая дорогая Маникюрша Варшавы. Маникюр однотон 250 зл
+"
+                image="/c.jpg"
+                instagram="7.2k"
+                ticktok="12.8k"
               />
             </div>
           </div>
         </section>
         <section className="relative flex flex-col items-center justify-center gap-7 md:py-20">
-          <h2 className="block max-w-[720px] px-5 text-center text-4xl font-extrabold md:text-5xl">
+          <h2 className="block max-w-[720px] px-5 text-center text-4xl font-extrabold md:text-4xl">
             Розкрийте{" "}
             <span className="animate-gradient-x bg-gradient-to-r from-pink-500 to-violet-500 bg-clip-text text-transparent">
               потенціал
@@ -133,7 +216,7 @@ export default function HomePage() {
             краси вашого бізнесу з кожним кліком
           </h2>
           <Buy />
-          <p className="w-[320px] text-center text-lg font-light text-black md:w-[720px] md:text-xl">
+          <p className="w-[320px] text-center text-lg font-light text-white md:w-[720px] md:text-xl">
             {" "}
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
             voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -145,22 +228,44 @@ export default function HomePage() {
         <section className="container grid grid-cols-[15px_1fr] gap-2">
           <Line f={"c"} s={"d"} i={"icon2"} />
           <div className="relative flex flex-col gap-5 pl-4">
-            <div className="flex max-w-[320px] flex-col gap-2 self-start md:max-w-[500px]">
-              <h2 className="text-start text-4xl font-bold md:text-5xl">
-                Розкрийте{" "}
-                <span className="animate-gradient-x bg-gradient-to-r from-amber-500 to-rose-500 bg-clip-text text-transparent">
-                  потенціал
-                </span>{" "}
-                краси
-              </h2>
-              <p className="text-start text-lg font-light text-black md:text-xl">
-                {" "}
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Quisquam,
-              </p>
+            <div className="grid w-full grid-rows-2 gap-2 self-start md:grid-cols-[250px_1fr] md:grid-rows-1 md:justify-center md:justify-items-center">
+              <div>
+                <h2 className="mb-10 text-start text-4xl font-bold md:text-4xl">
+                  Ждем{" "}
+                  <span className="animate-gradient-x bg-gradient-to-r from-amber-500 to-rose-500 bg-clip-text text-transparent">
+                    вас
+                  </span>{" "}
+                </h2>
+
+                <ul className="space-y-5">
+                  <li>🗓 26 ноября</li>
+                  <li>⏰ 10:00-19:00</li>
+                  <li>📌 ZADN Centrum Konferencyjne </li>
+                  <li>
+                    <a
+                      className="flex items-center justify-start gap-1"
+                      href="https://www.google.com/maps/place/Grzybowska+56,+00-844+Warszawa/@52.2353079,20.9857485,17z/data=!3m1!4b1!4m6!3m5!1s0x471ecc843e6d7709:0x3ed6c17870f01967!8m2!3d52.2353079!4d20.9883234!16s%2Fg%2F11csp1h2kv?entry=ttu"
+                    >
+                      🗺️ Grzybowska 56, Warszawa
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div className="flex items-center justify-center">
+                <a
+                  className="flex items-center justify-start gap-1"
+                  href="https://www.google.com/maps/place/Grzybowska+56,+00-844+Warszawa/@52.2353079,20.9857485,17z/data=!3m1!4b1!4m6!3m5!1s0x471ecc843e6d7709:0x3ed6c17870f01967!8m2!3d52.2353079!4d20.9883234!16s%2Fg%2F11csp1h2kv?entry=ttu"
+                >
+                  <Image
+                    src="/map.png"
+                    alt=""
+                    width={300}
+                    height={300}
+                    className="w-full rounded-lg"
+                  />
+                </a>
+              </div>
             </div>
-            <Gallery />
           </div>
         </section>
         <section className="container grid grid-rows-1 items-center justify-center justify-items-center gap-5 px-5 md:grid-cols-2 md:pt-12 ">
@@ -168,7 +273,7 @@ export default function HomePage() {
             <h2 className="text-center text-2xl font-bold md:text-2xl">
               Напишіть нам
             </h2>
-            <p className="text-center text-lg font-light text-black md:text-xl">
+            <p className="text-center text-lg font-light text-white md:text-xl">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
               voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing
               elit. Quisquam,
@@ -181,7 +286,7 @@ export default function HomePage() {
             <h2 className="text-center text-2xl font-bold md:text-start md:text-2xl">
               Як нас знайти
             </h2>
-            <p className="text-center text-lg font-light text-black md:text-start md:text-xl">
+            <p className="text-center text-lg font-light text-white md:text-start md:text-xl">
               {" "}
               Rynek 1, 50-106 Wrocław
             </p>
@@ -198,6 +303,7 @@ export default function HomePage() {
           </h2>
           <Buy />
         </section>
+        <div className="bg-stars pointer-events-none absolute bottom-0 left-0 z-20 h-[750px] w-full rotate-180 bg-cover bg-center bg-no-repeat" />
       </div>
     </main>
   );
