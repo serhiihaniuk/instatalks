@@ -193,7 +193,6 @@ export default function HomePage() {
               <Card
                 title="Юлия Бельмас"
                 description="Бизнес-эксперт в салонном бизнесе, владелец ТОП студии во Вроцлаве, знаю как выйти с режима «белка в колесе» и систематизировать свою работу."
-                description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,"
                 image="/e.jpg"
                 instagram="3.7k"
               />
