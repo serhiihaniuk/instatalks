@@ -94,6 +94,17 @@ export default {
             transform: "rotate(0deg) scale(1)",
           },
         },
+        "slow-scale": {
+          "0%": {
+            transform: "scale(1)",
+          },
+          "50%": {
+            transform: "scale(1.5)",
+          },
+          "100%": {
+            transform: "scale(1)",
+          },
+        },
       },
       animation: {
         "gradient-background-1": "gradient-background-1 8s infinite",
@@ -103,6 +114,7 @@ export default {
         "gradient-background-3": "gradient-background-3 8s infinite",
         "gradient-foreground-3": "gradient-foreground-3 8s infinite",
         "r-360": "rotate-360 1225s infinite",
+        "slow-scale": "slow-scale 1225s infinite",
       },
     },
   },
