@@ -18,9 +18,16 @@ export default function HomePage() {
         backgroundRepeat: "no-repeat",
         backgroundPosition: "bottom",
       }}
-      className="bg-pattern w-max-[100vw] relative flex min-h-screen flex-col items-center justify-center overflow-x-hidden pb-6 text-white "
+      className="bg-pattern w-max-[100vw] relative flex min-h-screen flex-col items-center justify-center pb-6 text-white "
     >
-      <div className="bg-stars animate-r-360 pointer-events-none absolute left-0 top-0 z-20 h-[750px] w-full bg-cover bg-center bg-no-repeat" />
+      <div className="fixed inset-0">
+        <div
+          className="bg-stars w-max-[100wv] animate-r-360 pointer-events-none left-0 top-0 z-20 h-[750px] w-full bg-cover bg-center bg-no-repeat"
+          style={{
+            position: "absolute",
+          }}
+        />
+      </div>
       <div className="bg-pattern flex w-full flex-col gap-12 bg-[center_top_1rem] bg-no-repeat">
         <section className="container flex min-h-screen flex-col items-center justify-center gap-5 bg-top">
           <div>
@@ -221,7 +228,7 @@ export default function HomePage() {
             </div>
           </div>
         </section>
-        <section className="mt-5 flex flex-col items-center justify-center gap-7 pb-12">
+        <section className="container mt-5 flex flex-col items-center justify-center gap-7 pb-12">
           <h2 className="mt-2 block max-w-[720px] px-5 text-center text-4xl font-extrabold md:text-5xl">
             <span
               data-content={"Тебя ждут"}
@@ -232,29 +239,27 @@ export default function HomePage() {
               </span>
             </span>
           </h2>
-          <p className="container px-10 text-center text-lg font-light text-white">
-            <ul className="space-y-5 text-start">
-              <li className="flex gap-2">
-                <CheckIcon />
-                Подарки от наших спонсоров на сумму свыше 200zł
-              </li>
-              <li className="flex gap-2">
-                <CheckIcon />
-                Крутой нетворкинг со спикерами и участниками конференции
-              </li>
-              <li className="flex gap-2">
-                <CheckIcon />
-                Кофе-брейк и нереальная фото зона для твоего контента.
-              </li>
-              <li className="flex gap-2 font-bold">
-                <CheckIcon />А также розыгрыши боксов с подарками от наших
-                спонсоров Staleks_polska, Dїvna и МЕГА BOX на сумму 2000zł от JZ
-                Nails Group
-              </li>
-            </ul>
-          </p>
+          <ul className="space-y-5 text-start">
+            <li className="flex gap-2">
+              <CheckIcon />
+              Подарки от наших спонсоров на сумму свыше 200zł
+            </li>
+            <li className="flex gap-2">
+              <CheckIcon />
+              Крутой нетворкинг со спикерами и участниками конференции
+            </li>
+            <li className="flex gap-2">
+              <CheckIcon />
+              Кофе-брейк и нереальная фото зона для твоего контента.
+            </li>
+            <li className="flex gap-2 font-bold">
+              <CheckIcon />А также розыгрыши боксов с подарками от наших
+              спонсоров Staleks_polska, Dїvna и МЕГА BOX на сумму 2000zł от JZ
+              Nails Group
+            </li>
+          </ul>
         </section>
-        <section className="relative flex flex-col items-center justify-center gap-7 md:py-20">
+        <section className="container relative flex flex-col items-center justify-center gap-7 md:py-20">
           <h2 className="block max-w-[720px] px-5 text-center text-3xl font-extrabold md:text-3xl">
             Успей забронировать свой билет на самую{" "}
             <span className="animate-gradient-x bg-gradient-to-r from-pink-500 to-violet-500 bg-clip-text text-transparent">
