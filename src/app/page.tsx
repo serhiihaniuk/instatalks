@@ -3,7 +3,11 @@ import Line from "~/components/line";
 import GoogleMap from "~/components/map";
 import Image from "next/image";
 import { cn } from "~/utils";
-import { PricingCardRegular, PricingCardVIP } from "~/components/pricing-card";
+import {
+  CheckIcon,
+  PricingCardRegular,
+  PricingCardVIP,
+} from "~/components/pricing-card";
 import Sponsor from "~/components/sponsor";
 
 export default function HomePage() {
@@ -209,8 +213,7 @@ export default function HomePage() {
               />
               <Card
                 title="Ангелина Рагоза"
-                description="Самая дорогая Маникюрша Варшавы. Маникюр однотон 250 зл
-"
+                description="Та Самая TikTok Маникюрша из Варшавы, которая берет 250 зл за однотон 🤑. Мои ученики пилят БЫСТРО и ДОРОГО! Учу скоростному маникюру и как мастеру зарабатывать больше на ногтях."
                 image="/c.jpg"
                 instagram="7.2k"
                 ticktok="12.8k"
@@ -230,17 +233,25 @@ export default function HomePage() {
             </span>
           </h2>
           <p className="container px-10 text-center text-lg font-light text-white">
-            Подарки от наших спонсоров на сумму свыше 2️⃣0️⃣0️⃣ зл, крутой
-            нетворкинг со спикерами и участниками конференции, кофебрейк и
-            нереальная фото зона для твоего контента. А также розыгрыш подарка
-            на сумму 2000zł от{" "}
-            <a
-              href="https://instagram.com/jznails_group"
-              target="_blank"
-              className="text-blue-200"
-            >
-              @jznails_group
-            </a>
+            <ul className="space-y-5 text-start">
+              <li className="flex gap-2">
+                <CheckIcon />
+                Подарки от наших спонсоров на сумму свыше 200zł
+              </li>
+              <li className="flex gap-2">
+                <CheckIcon />
+                Крутой нетворкинг со спикерами и участниками конференции
+              </li>
+              <li className="flex gap-2">
+                <CheckIcon />
+                Кофе-брейк и нереальная фото зона для твоего контента.
+              </li>
+              <li className="flex gap-2 font-bold">
+                <CheckIcon />А также розыгрыши боксов с подарками от наших
+                спонсоров Staleks_polska, Dїvna и МЕГА BOX на сумму 2000 зл от
+                JZ Nails Group
+              </li>
+            </ul>
           </p>
         </section>
         <section className="relative flex flex-col items-center justify-center gap-7 md:py-20">

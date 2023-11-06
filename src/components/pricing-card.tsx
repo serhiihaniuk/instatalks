@@ -1,7 +1,7 @@
 import React from "react";
 
 // You might want to move this SVG to a separate file for cleaner code
-const CheckIcon = () => (
+export const CheckIcon = () => (
   <svg
     className="h-5 w-5 flex-shrink-0 text-green-500 dark:text-green-400"
     fill="currentColor"
