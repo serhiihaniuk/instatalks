@@ -17,7 +17,7 @@ export default function HomePage() {
       }}
       className="bg-pattern relative flex min-h-screen flex-col items-center justify-center pb-6 text-white "
     >
-      <div className="bg-stars pointer-events-none absolute left-0 top-0 z-20 h-[750px] w-full bg-cover bg-center bg-no-repeat" />
+      <div className="bg-stars animate-r-360 pointer-events-none absolute left-0 top-0 z-20 h-[750px] w-full bg-cover bg-center bg-no-repeat" />
       <div className="bg-pattern flex w-full flex-col gap-12 bg-[center_top_1rem] bg-no-repeat">
         <section className="container flex min-h-screen flex-col items-center justify-center gap-5 bg-top">
           <div>
@@ -219,6 +219,31 @@ export default function HomePage() {
             </div>
           </div>
         </section>
+        <section className="mt-5 flex flex-col items-center justify-center gap-7 pb-12">
+          <h2 className="mt-2 block max-w-[720px] px-5 text-center text-4xl font-extrabold md:text-5xl">
+            <span
+              data-content={"Тебя ждут"}
+              className="before:animate-gradient-background-1 relative block before:absolute before:inset-y-0 before:left-0 before:z-0 before:block before:w-full before:bg-gradient-to-r before:from-pink-400 before:to-orange-300 before:bg-clip-text before:px-2 before:text-start before:text-transparent before:content-[attr(data-content)]"
+            >
+              <span className="animate-gradient-foreground-1 from-gradient-teal to-gradient-yellow bg-gradient-to-r bg-clip-text px-2 text-start text-transparent">
+                {"Тебя ждут"}
+              </span>
+            </span>
+          </h2>
+          <p className="container text-center text-lg font-light text-white">
+            Подарки от наших спонсоров на сумму свыше 2️⃣0️⃣0️⃣ зл, крутой
+            нетворкинг со спикерами и участниками конференции, кофебрейк и
+            нереальная фото зона для твоего контента. А также розыгрыш подарка
+            на сумму 2000zł от{" "}
+            <a
+              href="https://instagram.com/jznails_group"
+              target="_blank"
+              className="text-blue-200"
+            >
+              @jznails_group
+            </a>
+          </p>
+        </section>
         <section className="relative flex flex-col items-center justify-center gap-7 md:py-20">
           <h2 className="block max-w-[720px] px-5 text-center text-3xl font-extrabold md:text-3xl">
             Успей забронировать свой билет на самую{" "}
@@ -301,16 +326,6 @@ export default function HomePage() {
             </p>
           </div>
           <GoogleMap />
-        </section>
-        <section className="flex flex-col items-center justify-center gap-7 pb-12">
-          <h2 className="block max-w-[720px] px-5 text-center text-4xl font-extrabold md:text-5xl">
-            Розкрийте{" "}
-            <span className="animate-gradient-x bg-gradient-to-r from-pink-500 to-violet-500 bg-clip-text text-transparent">
-              потенціал
-            </span>{" "}
-            краси вашого бізнесу з кожним кліком
-          </h2>
-          <Buy />
         </section>
         <div className="bg-stars pointer-events-none absolute bottom-0 left-0 z-20 h-[750px] w-full rotate-180 bg-cover bg-center bg-no-repeat" />
       </div>

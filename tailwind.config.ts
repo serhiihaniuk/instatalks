@@ -83,6 +83,17 @@ export default {
             opacity: 0 as unknown as string,
           },
         },
+        "rotate-360": {
+          "0%": {
+            transform: "rotate(0deg) scale(1)",
+          },
+          "50%": {
+            transform: "rotate(360deg) scale(3.5)",
+          },
+          "100%": {
+            transform: "rotate(0deg) scale(1)",
+          },
+        },
       },
       animation: {
         "gradient-background-1": "gradient-background-1 8s infinite",
@@ -91,6 +102,7 @@ export default {
         "gradient-foreground-2": "gradient-foreground-2 8s infinite",
         "gradient-background-3": "gradient-background-3 8s infinite",
         "gradient-foreground-3": "gradient-foreground-3 8s infinite",
+        "r-360": "rotate-360 1925s infinite",
       },
     },
   },

@@ -1,4 +1,4 @@
-const config = {
+ctealonst config = {
   plugins: {
     tailwindcss: {},
     autoprefixer: {},
