@@ -14,7 +14,7 @@ export default function HomePage() {
         backgroundRepeat: "no-repeat",
         backgroundPosition: "bottom",
       }}
-      className="bg-pattern relative flex min-h-screen flex-col items-center justify-center pb-6 text-white "
+      className="bg-pattern w-max-[100vw] relative flex min-h-screen flex-col items-center justify-center overflow-x-hidden pb-6 text-white "
     >
       <div className="bg-stars animate-r-360 pointer-events-none absolute left-0 top-0 z-20 h-[750px] w-full bg-cover bg-center bg-no-repeat" />
       <div className="bg-pattern flex w-full flex-col gap-12 bg-[center_top_1rem] bg-no-repeat">
@@ -33,13 +33,13 @@ export default function HomePage() {
             пропустить ни один nail мастер.{" "}
           </p>
         </section>
-        <section className="container relative flex flex-wrap items-center justify-center gap-7 md:py-20">
-          <Sponsor href="/s1.png" />
-          <Sponsor href="/s2.png" />
-          <Sponsor href="/s3.png" />
-          <Sponsor href="/s4.png" />
-          <Sponsor href="/s5.png" />
-          <Sponsor href="/s6.png" />
+        <section className="container relative my-10 flex flex-wrap items-center justify-center gap-7 pb-12 md:my-2 md:py-20">
+          <Sponsor src="/s1.png" href="https://instagram.com/4mani_shop" />
+          <Sponsor src="/s2.png" href="https://instagram.com/konsulpro.pl" />
+          <Sponsor src="/s3.png" href="https://instagram.com/divna.official" />
+          <Sponsor src="/s4.png" href="https://instagram.com/jznails_group" />
+          <Sponsor src="/s5.png" href="https://instagram.com/staleks_polska" />
+          <Sponsor src="/s6.png" href="https://instagram.com/side.eu" />
         </section>
         <section className="container grid grid-cols-[15px_1fr] gap-2">
           <Line f={"c"} s={"d"} i={"icon2"} />

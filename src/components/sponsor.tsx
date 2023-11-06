@@ -3,18 +3,19 @@ import Image from "next/image";
 
 type SponsorProps = {
   href: string;
+  src: string;
 };
-const Sponsor: FC<SponsorProps> = ({ href }) => {
+const Sponsor: FC<SponsorProps> = ({ src, href }) => {
   return (
-    <div>
+    <a className="block" href={href} target="_blank">
       <Image
-        src={href}
+        src={src}
         className="max-w-[150px]"
         alt=""
         width={300}
         height={500}
       />
-    </div>
+    </a>
   );
 };
 
