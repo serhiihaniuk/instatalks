@@ -14,11 +14,11 @@ export default function HomePage() {
   return (
     <main
       style={{
-        backgroundSize: "100% 25%",
+        backgroundSize: "100% 15%",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "bottom",
       }}
-      className="bg-pattern w-max-[100vw] relative flex min-h-screen flex-col items-center justify-center pb-6 text-white "
+      className="w-max-[100vw] relative flex min-h-screen flex-col items-center justify-center pb-6 text-white "
     >
       <div className="pointer-events-none fixed inset-0">
         <div
@@ -359,6 +359,7 @@ export default function HomePage() {
           <Sponsor src="/s5.png" href="https://instagram.com/staleks_polska" />
           <Sponsor src="/s6.png" href="https://instagram.com/side.eu" />
         </section>
+        <div className="bg-pattern pointer-events-none absolute bottom-0 left-0 z-20 h-[750px] w-full rotate-180 bg-cover bg-center bg-no-repeat" />
         <div className="bg-stars pointer-events-none absolute bottom-0 left-0 z-20 h-[750px] w-full rotate-180 bg-cover bg-center bg-no-repeat" />
       </div>
     </main>
