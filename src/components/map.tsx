@@ -1,11 +1,11 @@
 const GoogleMap = () => {
   return (
-    <span className="inline-flex flex-col items-center justify-center">
+    <span className="inline-flex items-center justify-center">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 100 100"
-        width="35px"
-        height="35px"
+        width="25px"
+        height="25px"
       >
         <path
           fill="#70b570"

@@ -253,7 +253,7 @@ export default function HomePage() {
               </div>
               <div className="flex items-center justify-center">
                 <a
-                  className="flex items-center justify-start gap-1"
+                  className="flex flex-col items-center justify-start gap-1"
                   href="https://www.google.com/maps/place/Grzybowska+56,+00-844+Warszawa/@52.2353079,20.9857485,17z/data=!3m1!4b1!4m6!3m5!1s0x471ecc843e6d7709:0x3ed6c17870f01967!8m2!3d52.2353079!4d20.9883234!16s%2Fg%2F11csp1h2kv?entry=ttu"
                 >
                   <Image
@@ -261,8 +261,9 @@ export default function HomePage() {
                     alt=""
                     width={300}
                     height={300}
-                    className="w-full rounded-lg"
+                    className="h-[70%] w-[90%] rounded-lg"
                   />
+                  <GoogleMap />
                 </a>
               </div>
             </div>
