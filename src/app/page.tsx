@@ -1,13 +1,11 @@
 import Buy from "~/components/buy";
 import Card from "~/components/card";
 import Contact from "~/components/contact";
-import Countdown from "~/components/countdown";
-import Gallery from "~/components/gallery";
 import Line from "~/components/line";
 import GoogleMap from "~/components/map";
 import Image from "next/image";
-import { colors } from "tailwindcss/defaultTheme";
 import { cn } from "~/utils";
+import { PricingCardRegular, PricingCardVIP } from "~/components/pricing-card";
 
 export default function HomePage() {
   const slogan = ["Краса.", "Стиль.", "Бізнес."];
@@ -215,15 +213,10 @@ export default function HomePage() {
             </span>{" "}
             краси вашого бізнесу з кожним кліком
           </h2>
-          <Buy />
-          <p className="w-[320px] text-center text-lg font-light text-white md:w-[720px] md:text-xl">
-            {" "}
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-            voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Quisquam,
-          </p>
-          <div className="-z-1 absolute left-[20%] top-0 h-[44%] w-[25%] rounded-[100%] bg-gradient-to-r from-cyan-500 to-pink-500 opacity-10 blur-xl" />
-          <Countdown />
+          <div className="flex flex-col-reverse gap-5 px-5 md:flex-row">
+            <PricingCardRegular />
+            <PricingCardVIP />
+          </div>
         </section>
         <section className="container grid grid-cols-[15px_1fr] gap-2">
           <Line f={"c"} s={"d"} i={"icon2"} />
@@ -251,10 +244,11 @@ export default function HomePage() {
                   </li>
                 </ul>
               </div>
-              <div className="flex items-center justify-center">
+              <div className="mt-5 flex items-center justify-center md:mt-0">
                 <a
                   className="flex flex-col items-center justify-start gap-1"
                   href="https://www.google.com/maps/place/Grzybowska+56,+00-844+Warszawa/@52.2353079,20.9857485,17z/data=!3m1!4b1!4m6!3m5!1s0x471ecc843e6d7709:0x3ed6c17870f01967!8m2!3d52.2353079!4d20.9883234!16s%2Fg%2F11csp1h2kv?entry=ttu"
+                  target="_blank"
                 >
                   <Image
                     src="/map.png"
