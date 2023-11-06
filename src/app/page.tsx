@@ -26,8 +26,8 @@ export default function HomePage() {
           <h1 className="text-center text-2xl font-normal text-white">
             Конференция для мастеров маникюра и педикюра!
           </h1>
+          <p className="text-center font-normal">🔥Nail Moment 2023🔥</p>
           <p className="max-w-[520px] text-center text-lg font-thin">
-            <span className="font-normal">🔥Nail Moment 2023🔥</span> - это
             конференция на которой ты узнаешь последнюю, трендовую информацию
             ногтевого мира, вдохновишся и поднимешь свои знания на новый
             уровень. Мы объединили самые актуальные темы, которые не может
@@ -281,11 +281,12 @@ export default function HomePage() {
                       🗺️ Grzybowska 56, Warszawa
                     </a>
                   </li>
+                  <li>До встречи на Nail Moment 2023!</li>
                 </ul>
               </div>
               <div className="mt-5 flex items-center justify-center md:mt-0">
                 <a
-                  className="flex flex-col items-center justify-start gap-1"
+                  className="flex flex-col items-center justify-start gap-1 md:pl-20"
                   href="https://www.google.com/maps/place/Grzybowska+56,+00-844+Warszawa/@52.2353079,20.9857485,17z/data=!3m1!4b1!4m6!3m5!1s0x471ecc843e6d7709:0x3ed6c17870f01967!8m2!3d52.2353079!4d20.9883234!16s%2Fg%2F11csp1h2kv?entry=ttu"
                   target="_blank"
                 >
@@ -294,7 +295,7 @@ export default function HomePage() {
                     alt=""
                     width={300}
                     height={300}
-                    className="h-[70%] w-[90%] rounded-lg"
+                    className="h-[80%] w-full rounded-lg"
                   />
                   <GoogleMap />
                 </a>
@@ -305,27 +306,67 @@ export default function HomePage() {
         <section className="container grid grid-rows-1 items-center justify-center justify-items-center gap-5 px-5 md:grid-cols-2 md:pt-12 ">
           <div className="flex max-w-[320px] flex-col items-center justify-center gap-2 self-start md:max-w-[500px]">
             <h2 className="text-center text-2xl font-bold md:text-2xl">
-              Напишіть нам
+              Будь на связи!
             </h2>
-            <p className="text-center text-lg font-light text-white md:text-xl">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-              voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing
-              elit. Quisquam,
+            <p className="text-center">
+              Переходи в телеграм канал.
+              <a href="https://t.me/+NXNyzuGV84AxYzdk" target="_blank">
+                <svg
+                  className="mx-3 inline-block h-7 w-7"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlnsXlink="http://www.w3.org/1999/xlink"
+                  xmlSpace="preserve"
+                  style={{
+                    fillRule: "evenodd",
+                    clipRule: "evenodd",
+                    strokeLinejoin: "round",
+                    strokeMiterlimit: "1.41421",
+                    color: "#0088cc",
+                  }}
+                >
+                  <path
+                    id="telegram-1"
+                    d="M18.384,22.779c0.322,0.228 0.737,0.285 1.107,0.145c0.37,-0.141 0.642,-0.457 0.724,-0.84c0.869,-4.084 2.977,-14.421 3.768,-18.136c0.06,-0.28 -0.04,-0.571 -0.26,-0.758c-0.22,-0.187 -0.525,-0.241 -0.797,-0.14c-4.193,1.552 -17.106,6.397 -22.384,8.35c-0.335,0.124 -0.553,0.446 -0.542,0.799c0.012,0.354 0.25,0.661 0.593,0.764c2.367,0.708 5.474,1.693 5.474,1.693c0,0 1.452,4.385 2.209,6.615c0.095,0.28 0.314,0.5 0.603,0.576c0.288,0.075 0.596,-0.004 0.811,-0.207c1.216,-1.148 3.096,-2.923 3.096,-2.923c0,0 3.572,2.619 5.598,4.062Zm-11.01,-8.677l1.679,5.538l0.373,-3.507c0,0 6.487,-5.851 10.185,-9.186c0.108,-0.098 0.123,-0.262 0.033,-0.377c-0.089,-0.115 -0.253,-0.142 -0.376,-0.064c-4.286,2.737 -11.894,7.596 -11.894,7.596Z"
+                  />
+                </svg>{" "}
+              </a>
+              Там будет вся актуальная информация по поводу конференции.
             </p>
           </div>
-          <Contact />
-        </section>
-        <section className="container grid grid-rows-1 items-center justify-center justify-items-center gap-5 px-5 md:grid-cols-2 md:pb-12 ">
-          <div className="flex max-w-[320px] flex-col items-center justify-center gap-2 self-start md:max-w-[500px]">
-            <h2 className="text-center text-2xl font-bold md:text-start md:text-2xl">
-              Як нас знайти
+          <div className="mt-5 flex max-w-[320px] md:mt-0 flex-col items-center justify-center gap-2 self-start md:max-w-[500px]">
+            <h2 className="text-center text-2xl font-bold md:text-2xl">
+              Есть вопросы?{" "}
             </h2>
-            <p className="text-center text-lg font-light text-white md:text-start md:text-xl">
-              {" "}
-              Rynek 1, 50-106 Wrocław
+            <p className="text-center">
+              Напиши нам в поддержку!
+              <a target="_blank" href="https://t.me/+THVRcBRhyWc5OWY0">
+                <svg
+                  className="ml-5 inline-block h-7 w-7"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlnsXlink="http://www.w3.org/1999/xlink"
+                  xmlSpace="preserve"
+                  style={{
+                    fillRule: "evenodd",
+                    clipRule: "evenodd",
+                    strokeLinejoin: "round",
+                    strokeMiterlimit: "1.41421",
+                    color: "#0088cc",
+                  }}
+                >
+                  <path
+                    id="telegram-1"
+                    d="M18.384,22.779c0.322,0.228 0.737,0.285 1.107,0.145c0.37,-0.141 0.642,-0.457 0.724,-0.84c0.869,-4.084 2.977,-14.421 3.768,-18.136c0.06,-0.28 -0.04,-0.571 -0.26,-0.758c-0.22,-0.187 -0.525,-0.241 -0.797,-0.14c-4.193,1.552 -17.106,6.397 -22.384,8.35c-0.335,0.124 -0.553,0.446 -0.542,0.799c0.012,0.354 0.25,0.661 0.593,0.764c2.367,0.708 5.474,1.693 5.474,1.693c0,0 1.452,4.385 2.209,6.615c0.095,0.28 0.314,0.5 0.603,0.576c0.288,0.075 0.596,-0.004 0.811,-0.207c1.216,-1.148 3.096,-2.923 3.096,-2.923c0,0 3.572,2.619 5.598,4.062Zm-11.01,-8.677l1.679,5.538l0.373,-3.507c0,0 6.487,-5.851 10.185,-9.186c0.108,-0.098 0.123,-0.262 0.033,-0.377c-0.089,-0.115 -0.253,-0.142 -0.376,-0.064c-4.286,2.737 -11.894,7.596 -11.894,7.596Z"
+                  />
+                </svg>{" "}
+              </a>
             </p>
           </div>
-          <GoogleMap />
         </section>
         <div className="bg-stars pointer-events-none absolute bottom-0 left-0 z-20 h-[750px] w-full rotate-180 bg-cover bg-center bg-no-repeat" />
       </div>

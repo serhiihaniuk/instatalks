@@ -67,7 +67,8 @@ export const PricingCardRegular = () => (
       </li>
     </ul>
     <a
-      href="#"
+      href="https://buy.stripe.com/14k00Ibe09XT1aw6oo"
+      target="_blank"
       className="rounded-lg border border-emerald-900 px-5 py-2.5 text-center text-sm font-medium text-white focus:ring-4 dark:text-white"
     >
       Забронировать
@@ -91,7 +92,10 @@ export const PricingCardVIP = () => (
       <span className="mr-2 text-5xl font-extrabold">499</span>
       <span className="text-gray-500 dark:text-gray-400">/zł</span>
     </div>
-    <ul role="list" className="mb-8 space-y-4 text-left">
+    <ul
+      role="list"
+      className="bg-stars mb-8 block space-y-4 bg-no-repeat text-left"
+    >
       <li className="flex items-center space-x-3">
         <CheckIcon />
         <span>Вход на конференцию</span>
@@ -134,7 +138,8 @@ export const PricingCardVIP = () => (
       </li>
     </ul>
     <a
-      href="#"
+      href="https://buy.stripe.com/fZecNu95S2vrcTecMN"
+      target="_blank"
       className="rounded-lg border border-pink-800 px-5 py-2.5 text-center text-sm font-medium text-white focus:ring-4 dark:text-white"
     >
       Забронировать
