@@ -206,12 +206,12 @@ export default function HomePage() {
           </div>
         </section>
         <section className="relative flex flex-col items-center justify-center gap-7 md:py-20">
-          <h2 className="block max-w-[720px] px-5 text-center text-4xl font-extrabold md:text-4xl">
-            Розкрийте{" "}
+          <h2 className="block max-w-[720px] px-5 text-center text-3xl font-extrabold md:text-3xl">
+            Успей забронировать свой билет на самую{" "}
             <span className="animate-gradient-x bg-gradient-to-r from-pink-500 to-violet-500 bg-clip-text text-transparent">
-              потенціал
+              ТРЕНДОВУЮ
             </span>{" "}
-            краси вашого бізнесу з кожним кліком
+            конференцию этого года!
           </h2>
           <div className="flex flex-col-reverse gap-5 px-5 md:flex-row">
             <PricingCardRegular />

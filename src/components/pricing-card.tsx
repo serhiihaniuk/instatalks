@@ -17,40 +17,47 @@ const CheckIcon = () => (
 );
 
 export const PricingCardRegular = () => (
-  <div className="bg-gradient mx-auto flex max-w-lg flex-col rounded-lg  border border-emerald-900 p-6 text-center text-white shadow">
-    <h3 className="mb-4 text-2xl font-semibold">Starter</h3>
-    <p className="font-light text-gray-500 dark:text-gray-400 sm:text-lg">
-      Best option for personal use & for your next project.
-    </p>
+  <div className="bg-gradient mx-auto flex max-w-lg flex-col rounded-lg border border-emerald-900 bg-bottom p-6 text-center text-white shadow">
+    <h3 className="mb-4 text-4xl font-semibold">Обычный Билет</h3>
     <div className="my-8 flex items-baseline justify-center">
-      <span className="mr-2 text-5xl font-extrabold">$29</span>
-      <span className="text-gray-500 dark:text-gray-400">/month</span>
+      <span className="mr-2 text-5xl font-extrabold">249</span>
+      <span className="text-gray-500 dark:text-gray-400">/zł</span>
     </div>
     <ul role="list" className="mb-8 space-y-4 text-left">
       <li className="flex items-center space-x-3">
         <CheckIcon />
-        <span>Individual configuration</span>
+        <span>Вход на конференцию</span>
       </li>
       <li className="flex items-center space-x-3">
         <CheckIcon />
-        <span>No setup, or hidden fees</span>
+        <span>Кофе-брейк</span>
       </li>
       <li className="flex items-center space-x-3">
         <CheckIcon />
         <span>
-          Team size: <span className="font-semibold">1 developer</span>
+          <span className="bg-gradient-to-r from-pink-400 to-violet-300 bg-clip-text text-transparent">
+            Подарки{" "}
+          </span>
+          от спонсоров
         </span>
       </li>
-      <li className="flex items-center space-x-3">
-        <CheckIcon />
+      <li className="flex items-center space-x-3 pl-[33px] text-gray-300 line-through">
         <span>
-          Premium support: <span className="font-semibold">6 months</span>
+          <span className="bg-gradient-to-r from-pink-400 to-violet-300 bg-clip-text text-transparent">
+            Подарки{" "}
+          </span>
+          организаторов
         </span>
       </li>
-      <li className="flex items-center space-x-3">
-        <CheckIcon />
+      <li className="flex items-center space-x-3 pl-[33px] text-gray-300 line-through">
+        <span>Места в первых рядах</span>
+      </li>
+      <li className="flex items-center space-x-3 pl-[33px] text-gray-300 line-through">
+        <span>Обед со спикерами</span>
+      </li>
+      <li className="flex items-center space-x-3 pl-[33px] text-gray-300 line-through">
         <span>
-          Free updates: <span className="font-semibold">6 months</span>
+          Возможность лично пообщаться с крутыми экспертами в своей нише
         </span>
       </li>
     </ul>
@@ -64,40 +71,53 @@ export const PricingCardRegular = () => (
 );
 
 export const PricingCardVIP = () => (
-  <div className="bg-gradient mx-auto flex max-w-lg flex-col rounded-lg  border border-emerald-900 p-6 text-center text-white shadow">
-    <h3 className="mb-4 text-2xl font-semibold">Starter</h3>
-    <p className="font-light text-gray-500 dark:text-gray-400 sm:text-lg">
-      Best option for personal use & for your next project.
-    </p>
+  <div className="bg-gradient mx-auto flex max-w-lg flex-col rounded-lg border  border-pink-800 bg-cover p-6 text-center text-white shadow">
+    <h3 className="mb-4 bg-gradient-to-r from-pink-400 to-orange-500 bg-clip-text text-4xl font-semibold text-transparent">
+      VIP Билет
+    </h3>
     <div className="my-8 flex items-baseline justify-center">
-      <span className="mr-2 text-5xl font-extrabold">$29</span>
-      <span className="text-gray-500 dark:text-gray-400">/month</span>
+      <span className="mr-2 text-5xl font-extrabold">499</span>
+      <span className="text-gray-500 dark:text-gray-400">/zł</span>
     </div>
     <ul role="list" className="mb-8 space-y-4 text-left">
       <li className="flex items-center space-x-3">
         <CheckIcon />
-        <span>Individual configuration</span>
+        <span>Вход на конференцию</span>
       </li>
       <li className="flex items-center space-x-3">
         <CheckIcon />
-        <span>No setup, or hidden fees</span>
+        <span>Кофе-брейк</span>
       </li>
       <li className="flex items-center space-x-3">
         <CheckIcon />
         <span>
-          Team size: <span className="font-semibold">1 developer</span>
+          <span className="bg-gradient-to-r from-pink-400 to-violet-300 bg-clip-text text-transparent">
+            Подарки{" "}
+          </span>
+          от спонсоров
         </span>
       </li>
       <li className="flex items-center space-x-3">
         <CheckIcon />
         <span>
-          Premium support: <span className="font-semibold">6 months</span>
+          <span className="bg-gradient-to-r from-pink-400 to-violet-300 bg-clip-text text-transparent">
+            Подарки{" "}
+          </span>
+          организаторов
         </span>
       </li>
       <li className="flex items-center space-x-3">
         <CheckIcon />
+        <span>Места в первых рядах</span>
+      </li>
+      <li className="flex items-center space-x-3">
+        <CheckIcon />
+        <span>Обед со спикерами</span>
+      </li>
+      <li className="flex items-center space-x-3">
+        <CheckIcon />
         <span>
-          Free updates: <span className="font-semibold">6 months</span>
+          Возможность лично пообщаться с крутыми экспертами в своей нише
         </span>
       </li>
     </ul>
