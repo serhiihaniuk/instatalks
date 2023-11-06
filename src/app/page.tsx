@@ -8,7 +8,6 @@ import { cn } from "~/utils";
 import { PricingCardRegular, PricingCardVIP } from "~/components/pricing-card";
 
 export default function HomePage() {
-  const slogan = ["Краса.", "Стиль.", "Бізнес."];
   return (
     <main
       style={{
@@ -24,7 +23,7 @@ export default function HomePage() {
           <div>
             <Image src="/main_logo.png" alt="" width={300} height={300} />
           </div>
-          <h1 className="text-2xl font-normal text-white">
+          <h1 className="text-center text-2xl font-normal text-white">
             Конференция для мастеров маникюра и педикюра!
           </h1>
           <p className="max-w-[520px] text-center text-lg font-thin">
@@ -39,16 +38,21 @@ export default function HomePage() {
           <Line f={"c"} s={"d"} i={"icon2"} />
           <div className="relative grid grid-flow-row gap-5 pl-4 md:grid-cols-2">
             <div className="flex max-w-[320px] flex-col gap-2 self-start md:sticky md:top-8 md:max-w-[500px]">
-              <h2 className="text-start text-3xl font-bold md:text-4xl">
+              <h2 className="mb-5 text-start text-3xl font-bold md:text-4xl">
                 Темы{" "}
                 <span
                   className={cn(
                     "absolute top-0 block h-7 w-7 scale-125 rounded-2xl bg-amber-100 blur-xl",
                   )}
                 />
-                <span className="animate-gradient-x bg-gradient-to-r from-amber-500 to-orange-500 bg-clip-text text-transparent">
-                  конференции
-                </span>{" "}
+                <span
+                  data-content={"конференции"}
+                  className="before:animate-gradient-background-1 relative block before:absolute before:inset-y-0 before:left-0 before:z-0 before:block before:w-full before:bg-gradient-to-r before:from-pink-400 before:to-orange-300 before:bg-clip-text before:px-2 before:text-start before:text-transparent before:content-[attr(data-content)]"
+                >
+                  <span className="animate-gradient-foreground-1 from-gradient-blue to-gradient-teal bg-gradient-to-r bg-clip-text px-2 text-start text-transparent">
+                    конференции
+                  </span>
+                </span>
               </h2>
               <ul className="list-none space-y-7">
                 <li className="text-start text-base font-light text-gray-100">
@@ -169,6 +173,16 @@ export default function HomePage() {
                 </li>
               </ul>
             </div>
+            <h2 className="text-start text-3xl font-bold text-white md:hidden md:text-4xl">
+              <span
+                data-content={"Спикеры"}
+                className="before:animate-gradient-background-1 relative mt-20 block before:absolute before:inset-y-0 before:left-0 before:z-0 before:block before:w-full before:bg-gradient-to-r before:from-pink-400 before:to-orange-300 before:bg-clip-text before:px-2 before:text-start before:text-transparent before:content-[attr(data-content)]"
+              >
+                <span className="animate-gradient-foreground-1 from-gradient-blue to-gradient-teal bg-gradient-to-r bg-clip-text px-2 text-start text-transparent">
+                  {"Спикеры"}
+                </span>
+              </span>
+            </h2>
             <div className="grid grid-rows-3 gap-5">
               <Card
                 title="Анастасия Коваленко"

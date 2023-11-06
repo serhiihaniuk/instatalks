@@ -17,7 +17,12 @@ const CheckIcon = () => (
 );
 
 export const PricingCardRegular = () => (
-  <div className="bg-gradient mx-auto flex max-w-lg flex-col rounded-lg border border-emerald-900 bg-bottom p-6 text-center text-white shadow">
+  <div
+    className="bg-gradient mx-auto flex max-w-lg flex-col rounded-lg border border-emerald-900 bg-no-repeat p-6 text-center text-white shadow"
+    style={{
+      backgroundSize: "85% 75%",
+    }}
+  >
     <h3 className="mb-4 text-4xl font-semibold">Обычный Билет</h3>
     <div className="my-8 flex items-baseline justify-center">
       <span className="mr-2 text-5xl font-extrabold">249</span>
@@ -63,9 +68,9 @@ export const PricingCardRegular = () => (
     </ul>
     <a
       href="#"
-      className="bg-primary-600 hover:bg-primary-700 focus:ring-primary-200 dark:focus:ring-primary-900 rounded-lg px-5 py-2.5 text-center text-sm font-medium text-white focus:ring-4 dark:text-white"
+      className="rounded-lg border border-emerald-900 px-5 py-2.5 text-center text-sm font-medium text-white focus:ring-4 dark:text-white"
     >
-      Get started
+      Забронировать
     </a>
   </div>
 );
@@ -73,7 +78,14 @@ export const PricingCardRegular = () => (
 export const PricingCardVIP = () => (
   <div className="bg-gradient mx-auto flex max-w-lg flex-col rounded-lg border  border-pink-800 bg-cover p-6 text-center text-white shadow">
     <h3 className="mb-4 bg-gradient-to-r from-pink-400 to-orange-500 bg-clip-text text-4xl font-semibold text-transparent">
-      VIP Билет
+      <span
+        data-content={"VIP Билет"}
+        className="before:animate-gradient-background-1 relative block before:absolute before:inset-y-0 before:left-0 before:z-0 before:block before:w-full before:bg-gradient-to-r before:from-pink-400 before:to-orange-300 before:bg-clip-text before:px-2 before:text-center before:text-transparent before:content-[attr(data-content)]"
+      >
+        <span className="animate-gradient-foreground-1 from-gradient-purple to-gradient-red bg-gradient-to-r bg-clip-text px-2 text-start text-transparent">
+          VIP Билет
+        </span>
+      </span>
     </h3>
     <div className="my-8 flex items-baseline justify-center">
       <span className="mr-2 text-5xl font-extrabold">499</span>
@@ -123,9 +135,9 @@ export const PricingCardVIP = () => (
     </ul>
     <a
       href="#"
-      className="bg-primary-600 hover:bg-primary-700 focus:ring-primary-200 dark:focus:ring-primary-900 rounded-lg px-5 py-2.5 text-center text-sm font-medium text-white focus:ring-4 dark:text-white"
+      className="rounded-lg border border-pink-800 px-5 py-2.5 text-center text-sm font-medium text-white focus:ring-4 dark:text-white"
     >
-      Get started
+      Забронировать
     </a>
   </div>
 );
