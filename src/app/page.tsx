@@ -27,7 +27,7 @@ export default function HomePage() {
             Конференция для мастеров маникюра и педикюра!
           </h1>
           <p className="text-center font-normal">🔥Nail Moment 2023🔥</p>
-          <p className="max-w-[520px] text-center text-lg font-thin">
+          <p className="max-w-[520px] px-5 text-center text-lg font-thin">
             конференция на которой ты узнаешь последнюю, трендовую информацию
             ногтевого мира, вдохновишся и поднимешь свои знания на новый
             уровень. Мы объединили самые актуальные темы, которые не может
@@ -230,7 +230,7 @@ export default function HomePage() {
               </span>
             </span>
           </h2>
-          <p className="container text-center text-lg font-light text-white">
+          <p className="container px-10 text-center text-lg font-light text-white">
             Подарки от наших спонсоров на сумму свыше 2️⃣0️⃣0️⃣ зл, крутой
             нетворкинг со спикерами и участниками конференции, кофебрейк и
             нереальная фото зона для твоего контента. А также розыгрыш подарка
@@ -336,7 +336,7 @@ export default function HomePage() {
               Там будет вся актуальная информация по поводу конференции.
             </p>
           </div>
-          <div className="mt-5 flex max-w-[320px] md:mt-0 flex-col items-center justify-center gap-2 self-start md:max-w-[500px]">
+          <div className="mt-5 flex max-w-[320px] flex-col items-center justify-center gap-2 self-start md:mt-0 md:max-w-[500px]">
             <h2 className="text-center text-2xl font-bold md:text-2xl">
               Есть вопросы?{" "}
             </h2>
