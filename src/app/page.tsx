@@ -4,6 +4,7 @@ import GoogleMap from "~/components/map";
 import Image from "next/image";
 import { cn } from "~/utils";
 import { PricingCardRegular, PricingCardVIP } from "~/components/pricing-card";
+import Sponsor from "~/components/sponsor";
 
 export default function HomePage() {
   return (
@@ -31,6 +32,14 @@ export default function HomePage() {
             уровень. Мы объединили самые актуальные темы, которые не может
             пропустить ни один nail мастер.{" "}
           </p>
+        </section>
+        <section className="container relative flex flex-wrap items-center justify-center gap-7 md:py-20">
+          <Sponsor href="/s1.png" />
+          <Sponsor href="/s2.png" />
+          <Sponsor href="/s3.png" />
+          <Sponsor href="/s4.png" />
+          <Sponsor href="/s5.png" />
+          <Sponsor href="/s6.png" />
         </section>
         <section className="container grid grid-cols-[15px_1fr] gap-2">
           <Line f={"c"} s={"d"} i={"icon2"} />
