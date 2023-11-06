@@ -252,7 +252,7 @@ export default function HomePage() {
             </span>{" "}
             конференцию этого года!
           </h2>
-          <div className="flex flex-col-reverse gap-5 px-5 md:flex-row">
+          <div className="flex flex-col gap-5 px-5 md:flex-row">
             <PricingCardRegular />
             <PricingCardVIP />
           </div>
