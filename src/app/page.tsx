@@ -248,8 +248,8 @@ export default function HomePage() {
               </li>
               <li className="flex gap-2 font-bold">
                 <CheckIcon />А также розыгрыши боксов с подарками от наших
-                спонсоров Staleks_polska, Dїvna и МЕГА BOX на сумму 2000 зл от
-                JZ Nails Group
+                спонсоров Staleks_polska, Dїvna и МЕГА BOX на сумму 2000zł от JZ
+                Nails Group
               </li>
             </ul>
           </p>
