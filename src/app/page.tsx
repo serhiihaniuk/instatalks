@@ -43,8 +43,25 @@ export default function HomePage() {
             уровень. Мы объединили самые актуальные темы, которые не может
             пропустить ни один nail мастер.{" "}
           </p>
+          <div className="flex flex-col text-center md:flex-row">
+            <a
+              href="#details"
+              className="mb-2 mr-2 rounded-lg border border-emerald-800 px-5 py-2.5 text-sm font-medium text-white hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300"
+            >
+              Узнать подробнее
+            </a>
+            <a
+              href="#book"
+              className="mb-2 mr-2 rounded-lg border border-pink-500 px-5 py-2.5 text-sm font-medium text-white hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300"
+            >
+              Забронировать
+            </a>
+          </div>
         </section>
-        <section className="container grid grid-cols-[15px_1fr] gap-2">
+        <section
+          id="details"
+          className="container grid grid-cols-[15px_1fr] gap-2"
+        >
           <Line f={"c"} s={"d"} i={"icon2"} />
           <div className="relative grid grid-flow-row gap-5 pl-4 md:grid-cols-2">
             <div className="flex max-w-[320px] flex-col gap-2 self-start md:sticky md:top-8 md:max-w-[500px]">
@@ -259,7 +276,10 @@ export default function HomePage() {
             </li>
           </ul>
         </section>
-        <section className="container relative flex flex-col items-center justify-center gap-7 md:py-20">
+        <section
+          id="book"
+          className="container relative flex flex-col items-center justify-center gap-7 md:py-20"
+        >
           <h2 className="block max-w-[720px] px-5 text-center text-3xl font-extrabold md:text-3xl">
             Успей забронировать свой билет на самую{" "}
             <span className="animate-gradient-x bg-gradient-to-r from-pink-500 to-violet-500 bg-clip-text text-transparent">
