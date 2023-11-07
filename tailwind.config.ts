@@ -88,7 +88,7 @@ export default {
             transform: "rotate(0deg) scale(1)",
           },
           "50%": {
-            transform: "rotate(360deg) scale(3.5)",
+            transform: "rotate(360deg) scale(1.5)",
           },
           "100%": {
             transform: "rotate(0deg) scale(1)",
