@@ -20,7 +20,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="ru">
+      <head>
+        <meta
+          name="description"
+          content="Присоединяйтесь к ведущей конференции Нейл Момент 2023 в Варшаве для специалистов ногтевого сервиса. Откройте для себя последние тенденции отрасли, общайтесь с экспертами и повышайте свои навыки. Забронируйте сейчас для участия в познавательных докладах, мастер-классах и эксклюзивных возможностях для нетворкинга."
+        />
+        <meta
+          name="keywords"
+          content="конференция ногтевого сервиса, эксперты по маникюру, тенденции педикюра, индустрия красоты, образование для техников по ногтям, конференция красоты, мастер-классы по ногтям, событие ногтевой индустрии Варшавы, нетворкинг для профессионалов ногтевого сервиса"
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </head>
       <body
         className={`w-max-[100vw] flex min-h-screen flex-col overflow-x-hidden scroll-smooth bg-[#1c2a2a] font-sans ${inter.variable}`}
       >

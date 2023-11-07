@@ -25,7 +25,7 @@ export const PricingCardRegular = () => (
   >
     <h3 className="mb-4 text-4xl font-semibold">Обычный Билет</h3>
     <div className="my-8 flex items-baseline justify-center">
-      <span className="mr-2 text-5xl font-extrabold">249</span>
+      <span className="mr-2 text-5xl font-extrabold">299</span>
       <span className="text-gray-500 dark:text-gray-400">/zł</span>
     </div>
     <ul role="list" className="mb-8 space-y-4 text-left">
