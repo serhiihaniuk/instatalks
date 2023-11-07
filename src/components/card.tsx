@@ -5,7 +5,7 @@ type CardProps = {
   title: string;
   description: string;
   image: string;
-  instagram: string;
+  instagram?: string;
   ticktok?: string;
 };
 const Card: React.FC<CardProps> = ({
@@ -36,10 +36,12 @@ const Card: React.FC<CardProps> = ({
           <p className="text-base font-thin">{description}</p>
         </div>
         <div className="flex items-center gap-3">
-          <div className="flex items-center justify-center gap-2 text-sm">
-            <InstagramIcon />
-            <p className="leading-none">{instagram}</p>
-          </div>
+          {instagram && (
+            <div className="flex items-center justify-center gap-2 text-sm">
+              <InstagramIcon />
+              <p className="leading-none">{instagram}</p>
+            </div>
+          )}
           {ticktok && (
             <div className="flex items-center justify-center gap-2 text-sm">
               <TiktokIcon />

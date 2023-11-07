@@ -30,13 +30,12 @@ export default function HomePage() {
       </div>
       <div className="bg-pattern flex w-full flex-col gap-12 bg-[center_top_1rem] bg-no-repeat">
         <section className="container flex min-h-screen flex-col items-center justify-center gap-5 bg-top">
-          <div>
+          <div className="mt-5">
             <Image src="/main_logo.png" alt="" width={300} height={300} />
           </div>
           <h1 className="text-center text-2xl font-normal text-white">
             Конференция для мастеров маникюра и педикюра!
           </h1>
-          <p className="text-center font-normal">🔥Nail Moment 2023🔥</p>
           <p className="max-w-[520px] px-5 text-center text-lg font-thin">
             конференция на которой ты узнаешь последнюю, трендовую информацию
             ногтевого мира, вдохновишся и поднимешь свои знания на новый
@@ -196,7 +195,8 @@ export default function HomePage() {
                       @angelina_nail_say
                     </a>
                   </div>
-                  5 секретов высокого прайса
+                  5 секретов Высокого прайса💰, которые помогут поднять твой
+                  прайс
                 </li>
               </ul>
             </div>
@@ -233,7 +233,7 @@ export default function HomePage() {
                 title="Оля Лягина"
                 description="Я забыла о нижних формах уже более чем на полгода. Не боюсь ногтей грызуна и с помощью верхних форм могу сделать носибельные ногти без сколов."
                 image="/a.jpg"
-                instagram="4.8k"
+                ticktok="275k"
               />
               <Card
                 title="Ангелина Рагоза"
@@ -269,12 +269,19 @@ export default function HomePage() {
               <CheckIcon />
               Кофе-брейк и нереальная фото зона для твоего контента.
             </li>
-            <li className="flex gap-2 font-bold">
-              <CheckIcon />А также розыгрыши боксов с подарками от наших
-              спонсоров Staleks_polska, Dїvna и МЕГА BOX на сумму 2000zł от JZ
-              Nails Group
-            </li>
           </ul>
+          <p className="max-w-[500px] gap-2 px-5 text-center text-xl">
+            А также розыгрыши боксов с подарками от наших спонсоров
+            Staleks_polska, Dїvna и{" "}
+            <span className="my-3 block text-4xl font-extrabold">МЕГА BOX</span>
+            <span className="text-4xl font-extrabold uppercase">
+              на сумму{" "}
+              <span className="animate-gradient-x block bg-gradient-to-r from-pink-500 to-violet-500 bg-clip-text text-transparent">
+                2000zł{" "}
+              </span>
+              <span className="block">от JZ Nails Group</span>
+            </span>
+          </p>
         </section>
         <section
           id="book"
@@ -338,6 +345,28 @@ export default function HomePage() {
             </div>
           </div>
         </section>
+
+        <section className="container relative my-10  md:my-2 md:pt-20">
+          <h2 className="mb-5 text-center text-4xl font-bold md:text-4xl">
+            <span className="animate-gradient-x bg-gradient-to-r from-amber-500 to-rose-500 bg-clip-text text-transparent">
+              Наши спонсоры
+            </span>{" "}
+          </h2>
+          <div className="flex flex-wrap items-center justify-center gap-7 pb-2">
+            <Sponsor src="/s1.png" href="https://instagram.com/4mani_shop" />
+            <Sponsor src="/s2.png" href="https://instagram.com/konsulpro.pl" />
+            <Sponsor
+              src="/s3.png"
+              href="https://instagram.com/divna.official"
+            />
+            <Sponsor src="/s4.png" href="https://instagram.com/jznails_group" />
+            <Sponsor
+              src="/s5.png"
+              href="https://instagram.com/staleks_polska"
+            />
+            <Sponsor src="/s6.png" href="https://instagram.com/side.eu" />
+          </div>
+        </section>
         <section className="container grid grid-rows-1 items-center justify-center justify-items-center gap-5 px-5 md:pt-12 ">
           <div className="mt-5 flex max-w-[320px] flex-col items-center justify-center gap-2 self-start md:mt-0 md:max-w-[500px]">
             <h2 className="text-center text-2xl font-bold md:text-2xl">
@@ -370,14 +399,6 @@ export default function HomePage() {
               </a>
             </p>
           </div>
-        </section>
-        <section className="container relative my-10 flex flex-wrap items-center justify-center gap-7 pb-12 md:my-2 md:py-20">
-          <Sponsor src="/s1.png" href="https://instagram.com/4mani_shop" />
-          <Sponsor src="/s2.png" href="https://instagram.com/konsulpro.pl" />
-          <Sponsor src="/s3.png" href="https://instagram.com/divna.official" />
-          <Sponsor src="/s4.png" href="https://instagram.com/jznails_group" />
-          <Sponsor src="/s5.png" href="https://instagram.com/staleks_polska" />
-          <Sponsor src="/s6.png" href="https://instagram.com/side.eu" />
         </section>
         <div className="bg-pattern pointer-events-none absolute bottom-0 left-0 z-20 h-[750px] w-full rotate-180 bg-cover bg-center bg-no-repeat" />
         <div className="bg-stars pointer-events-none absolute bottom-0 left-0 z-20 h-[750px] w-full rotate-180 bg-cover bg-center bg-no-repeat" />

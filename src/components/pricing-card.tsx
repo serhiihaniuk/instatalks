@@ -51,7 +51,7 @@ export const PricingCardRegular = () => (
           <span className="bg-gradient-to-r from-pink-400 to-violet-300 bg-clip-text text-transparent">
             Подарки{" "}
           </span>
-          организаторов
+          от организаторов
         </span>
       </li>
       <li className="flex items-center space-x-3 pl-[33px] text-gray-300 line-through">
@@ -119,7 +119,7 @@ export const PricingCardVIP = () => (
           <span className="bg-gradient-to-r from-pink-400 to-violet-300 bg-clip-text text-transparent">
             Подарки{" "}
           </span>
-          организаторов
+          от организаторов
         </span>
       </li>
       <li className="flex items-center space-x-3">
