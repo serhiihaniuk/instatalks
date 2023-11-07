@@ -43,7 +43,7 @@ const ConferenceInfo = () => {
             <span role="img" aria-label="Location">
               📌
             </span>{" "}
-            ZADN Centrum Konferencyjne, Grzybowska 56, Warszawa
+            ADN Centrum Konferencyjne, Grzybowska 56, Warszawa
           </p>
         </div>
         <div className="text-center">
