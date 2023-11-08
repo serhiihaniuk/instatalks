@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const Footer = () => {
   return (
     <footer className="m-4 rounded-lg bg-gray-800 shadow">
@@ -8,9 +10,9 @@ const Footer = () => {
         </div>
         <ul className="flex flex-wrap items-center justify-center text-sm font-medium text-sky-500">
           <li>
-            <a href="#" className="mr-4 hover:underline md:mr-6">
+            <Link href="/polityka" className="mr-4 hover:underline md:mr-6">
               Polityka prywatności
-            </a>
+            </Link>
           </li>
           <li>
             <a href="#" className="mr-4 hover:underline md:mr-6">
