@@ -31,7 +31,7 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </head>
       <body
-        className={`w-max-[100vw] flex min-h-screen flex-col overflow-x-hidden scroll-smooth bg-[#1c2a2a] font-sans ${inter.variable}`}
+        className={`w-max-[100vw] flex min-h-screen flex-col overflow-x-hidden scroll-smooth bg-black font-sans ${inter.variable}`}
       >
         {children}
         <Footer />
