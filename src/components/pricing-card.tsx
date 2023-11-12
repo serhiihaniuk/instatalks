@@ -18,7 +18,7 @@ export const CheckIcon = () => (
 
 export const PricingCardRegular = () => (
   <div
-    className="bg-gradient mx-auto flex max-w-lg flex-col rounded-lg border border-emerald-900 bg-no-repeat p-6 text-center text-white shadow"
+    className="mx-auto flex max-w-lg flex-col rounded-lg border border-emerald-900 bg-gradient bg-no-repeat p-6 text-center text-white shadow"
     style={{
       backgroundSize: "85% 75%",
     }}
@@ -77,13 +77,13 @@ export const PricingCardRegular = () => (
 );
 
 export const PricingCardVIP = () => (
-  <div className="bg-gradient mx-auto flex max-w-lg flex-col rounded-lg border  border-pink-800 bg-cover p-6 text-center text-white shadow">
+  <div className="mx-auto flex max-w-lg flex-col rounded-lg border border-pink-800  bg-gradient bg-cover p-6 text-center text-white shadow">
     <h3 className="mb-4 bg-gradient-to-r from-pink-400 to-orange-500 bg-clip-text text-4xl font-semibold text-transparent">
       <span
         data-content={"VIP Билет"}
-        className="before:animate-gradient-background-1 relative block before:absolute before:inset-y-0 before:left-0 before:z-0 before:block before:w-full before:bg-gradient-to-r before:from-pink-400 before:to-orange-300 before:bg-clip-text before:px-2 before:text-center before:text-transparent before:content-[attr(data-content)]"
+        className="relative block before:absolute before:inset-y-0 before:left-0 before:z-0 before:block before:w-full before:animate-gradient-background-1 before:bg-gradient-to-r before:from-pink-400 before:to-orange-300 before:bg-clip-text before:px-2 before:text-center before:text-transparent before:content-[attr(data-content)]"
       >
-        <span className="animate-gradient-foreground-1 from-gradient-purple to-gradient-red bg-gradient-to-r bg-clip-text px-2 text-start text-transparent">
+        <span className="animate-gradient-foreground-1 bg-gradient-to-r from-gradient-purple to-gradient-red bg-clip-text px-2 text-start text-transparent">
           VIP Билет
         </span>
       </span>
@@ -94,7 +94,7 @@ export const PricingCardVIP = () => (
     </div>
     <ul
       role="list"
-      className="bg-stars mb-8 block space-y-4 bg-no-repeat text-left"
+      className="mb-8 block space-y-4 bg-stars bg-no-repeat text-left"
     >
       <li className="flex items-center space-x-3">
         <CheckIcon />
@@ -137,12 +137,8 @@ export const PricingCardVIP = () => (
         </span>
       </li>
     </ul>
-    <a
-      href="https://buy.stripe.com/fZecNu95S2vrcTecMN"
-      target="_blank"
-      className="rounded-lg border border-pink-800 px-5 py-2.5 text-center text-sm font-medium text-white focus:ring-4 dark:text-white"
-    >
-      Забронировать
-    </a>
+    <div className="w-30 flex h-10 items-center justify-center rounded-md bg-red-500">
+      SOLD OUT
+    </div>
   </div>
 );
