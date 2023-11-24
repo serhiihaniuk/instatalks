@@ -66,13 +66,9 @@ export const PricingCardRegular = () => (
         </span>
       </li>
     </ul>
-    <a
-      href="https://buy.stripe.com/14k00Ibe09XT1aw6oo"
-      target="_blank"
-      className="rounded-lg border border-emerald-900 px-5 py-2.5 text-center text-sm font-medium text-white focus:ring-4 dark:text-white"
-    >
-      Забронировать
-    </a>
+    <div className="w-30 flex h-10 items-center justify-center rounded-md bg-red-500">
+      SOLD OUT
+    </div>
   </div>
 );
 
