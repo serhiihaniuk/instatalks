@@ -2,6 +2,7 @@
 import { motion, useTransform, useScroll } from "framer-motion";
 import { useRef } from "react";
 import { cn } from "~/utils";
+import Image from "next/image";
 
 export const Carousel = () => {
   return (
@@ -48,14 +49,14 @@ const Card = ({ card }: { card: TCard }) => {
       key={card.id}
       className="group relative h-[90vh] w-[800px] overflow-hidden bg-neutral-200"
     >
-      <div
-        style={{
-          backgroundImage: `url(${card.url})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-        className="absolute inset-0 z-0 transition-transform duration-300 group-hover:scale-110"
-      ></div>
+      <Image
+        src={card.url}
+        width={600}
+        className="absolute inset-0 h-full w-full object-cover"
+        height={800}
+        quality={80}
+        alt=""
+      />
     </div>
   );
 };
@@ -64,37 +65,37 @@ export default Carousel;
 
 const cards = [
   {
-    url: "prev_conf/1.jpeg",
+    url: "/prev_conf/1.jpeg",
     title: "Title 1",
     id: 1,
   },
   {
-    url: "prev_conf/2.jpeg",
+    url: "/prev_conf/2.jpeg",
     title: "Title 2",
     id: 2,
   },
   {
-    url: "prev_conf/3.jpeg",
+    url: "/prev_conf/3.jpeg",
     title: "Title 3",
     id: 3,
   },
   {
-    url: "prev_conf/4.jpeg",
+    url: "/prev_conf/4.jpeg",
     title: "Title 4",
     id: 4,
   },
   {
-    url: "prev_conf/5.jpeg",
+    url: "/prev_conf/5.jpeg",
     title: "Title 5",
     id: 5,
   },
   {
-    url: "prev_conf/6.jpeg",
+    url: "/prev_conf/6.jpeg",
     title: "Title 6",
     id: 6,
   },
   {
-    url: "prev_conf/7.jpeg",
+    url: "/prev_conf/7.jpeg",
     title: "Title 7",
     id: 7,
   },
