@@ -77,7 +77,7 @@ export default function HomePage() {
                     className="relative block before:absolute before:inset-y-0 before:left-0 before:z-0 before:block before:w-full before:animate-gradient-background-1 before:bg-gradient-to-r before:from-pink-400 before:to-orange-300 before:bg-clip-text before:px-2 before:text-start before:text-transparent before:content-[attr(data-content)]"
                   >
                     <span className="animate-gradient-foreground-1 bg-gradient-to-r from-gradient-blue to-gradient-teal bg-clip-text px-2 text-start text-transparent">
-                      конференции
+                      конференції
                     </span>
                   </span>
                 </h2>
@@ -115,7 +115,7 @@ export default function HomePage() {
               </div>
               <h2 className="text-start text-3xl font-bold text-white md:hidden md:text-4xl">
                 <span
-                  data-content={"Спикеры"}
+                  data-content={"Спікери"}
                   className="relative mt-20 block before:absolute before:inset-y-0 before:left-0 before:z-0 before:block before:w-full before:animate-gradient-background-1 before:bg-gradient-to-r before:from-pink-400 before:to-orange-300 before:bg-clip-text before:px-2 before:text-start before:text-transparent before:content-[attr(data-content)]"
                 >
                   <span className="animate-gradient-foreground-1 bg-gradient-to-r from-gradient-blue to-gradient-teal bg-clip-text px-2 text-start text-transparent">
@@ -140,7 +140,7 @@ export default function HomePage() {
               </div>
             </div>
           </section>
-          <section className="container mt-5 flex flex-col items-center justify-center gap-7 pb-12">
+          <section className="container mt-16 flex flex-col items-center justify-center gap-7 pb-12">
             <h2 className="mt-2 block max-w-[720px] px-5 text-center text-4xl font-extrabold md:text-5xl">
               <span
                 data-content={"На тебе чекають"}
@@ -193,7 +193,7 @@ export default function HomePage() {
               <PricingCardVIP />
             </div>
           </section>
-          <section className="container grid grid-cols-[1fr] gap-2">
+          <section className="container mt-16 grid grid-cols-[1fr] gap-2">
             <div className="relative flex flex-col gap-5 pl-4">
               <div className="grid w-full grid-rows-2 gap-2 self-start md:grid-cols-[250px_1fr] md:grid-rows-1 md:justify-center md:justify-items-center">
                 <div>
