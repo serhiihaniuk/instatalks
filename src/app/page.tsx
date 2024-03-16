@@ -7,6 +7,7 @@ import { cn, formatSubscribers } from "~/utils";
 import { PricingCardVIP } from "~/components/pricing-card";
 import Sponsor from "~/components/sponsor";
 import { conferenceSpeakers } from "~/speakers";
+import { AnimatedPinDemo } from "~/components/pin";
 
 export default function HomePage() {
   return (
@@ -213,7 +214,7 @@ export default function HomePage() {
                   <li>
                     <a
                       className="flex items-center justify-start gap-1"
-                      href="https://www.google.com/maps/place/Grzybowska+56,+00-844+Warszawa/@52.2353079,20.9857485,17z/data=!3m1!4b1!4m6!3m5!1s0x471ecc843e6d7709:0x3ed6c17870f01967!8m2!3d52.2353079!4d20.9883234!16s%2Fg%2F11csp1h2kv?entry=ttu"
+                      href="https://maps.app.goo.gl/6GR4TWbwjL9w6sfAA"
                     >
                       🗺️ Grzybowska 56, Warszawa
                     </a>
@@ -221,22 +222,7 @@ export default function HomePage() {
                   <li>До зустрічі на Nail Moment 2023!</li>
                 </ul>
               </div>
-              <div className="mt-5 flex items-center justify-center md:mt-0">
-                <a
-                  className="flex flex-col items-center justify-start gap-1 md:pl-20"
-                  href="https://www.google.com/maps/place/Grzybowska+56,+00-844+Warszawa/@52.2353079,20.9857485,17z/data=!3m1!4b1!4m6!3m5!1s0x471ecc843e6d7709:0x3ed6c17870f01967!8m2!3d52.2353079!4d20.9883234!16s%2Fg%2F11csp1h2kv?entry=ttu"
-                  target="_blank"
-                >
-                  <Image
-                    src="/map.png"
-                    alt=""
-                    width={300}
-                    height={300}
-                    className="h-[80%] w-full rounded-lg"
-                  />
-                  <GoogleMap />
-                </a>
-              </div>
+              <AnimatedPinDemo />
             </div>
           </div>
         </section>

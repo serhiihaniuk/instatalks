@@ -18,7 +18,7 @@ export const CheckIcon = () => (
 
 export const PricingCardRegular = () => (
   <div
-    className="mx-auto flex max-w-lg flex-col rounded-lg border border-emerald-900 bg-gradient bg-no-repeat p-6 text-center text-white shadow"
+    className="mx-auto flex max-w-lg flex-col rounded-2xl border border-emerald-900 bg-gradient bg-no-repeat p-6 text-center text-white shadow"
     style={{
       backgroundSize: "85% 75%",
     }}
@@ -73,7 +73,7 @@ export const PricingCardRegular = () => (
 );
 
 export const PricingCardVIP = () => (
-  <div className="mx-auto flex max-w-lg flex-col rounded-lg border border-pink-800  bg-gradient bg-cover p-6 text-center text-white shadow">
+  <div className="mx-auto flex max-w-lg flex-col rounded-3xl border border-pink-800  bg-gradient bg-cover p-6 text-center text-white shadow">
     <h3 className="mb-4 bg-gradient-to-r from-pink-400 to-orange-500 bg-clip-text text-4xl font-semibold text-transparent">
       <span
         data-content={"Квиток"}
