@@ -34,12 +34,16 @@ export default function HomePage() {
           <h1 className="text-center text-2xl font-normal text-white">
             Конференція для майстрів манікюру та педикюру!
           </h1>
+          <h2 className="text-center text-xl font-normal text-white">2024</h2>
           <p className="max-w-[520px] px-5 text-center text-lg font-thin">
             Конференція на якій ти дізнаєшся останню, трендову інформацію
             нігтьового світу, надихнешся і піднімеш свої знання на новий рівень.
             Ми об'єднали найактуальніші теми, які не може пропустити жоден nail
             майстер.
           </p>
+          <h3 className="text-center text-xl font-normal text-white">
+            28 квітня у Варшаві
+          </h3>
           <div className="flex flex-col text-center md:flex-row">
             <a
               href="#details"
