@@ -181,7 +181,7 @@ export default function HomePage() {
           </section>
           <section
             id="book"
-            className="container relative mt-10 flex flex-col items-center justify-center gap-7 md:py-20"
+            className="container relative mt-10 flex flex-col items-center justify-center gap-7"
           >
             <h2 className="block max-w-[720px] px-5 text-center text-3xl font-extrabold md:text-3xl">
               Встигни забронювати свій квиток на найбільш{" "}
