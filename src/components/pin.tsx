@@ -7,17 +7,17 @@ import GoogleMap from "./map";
 
 export function AnimatedPinDemo() {
   return (
-    <div className="flex h-[375px] w-[375px] items-center justify-center ">
+    <div className="flex h-[360px] w-[360px] items-center justify-center ">
       <PinContainer
-        className="h-[375px] w-[375px]"
+        className="h-[360px] w-[360px]"
         title="🗺️ Grzybowska 56, Warszawa"
         href="https://maps.app.goo.gl/6GR4TWbwjL9w6sfAA"
       >
         <Image
           src="/map.png"
           alt=""
-          width={370}
-          height={370}
+          width={360}
+          height={360}
           className="h-full w-full rounded-lg"
         />
       </PinContainer>
@@ -68,7 +68,7 @@ export const PinContainer = ({
           style={{
             transform: transform,
           }}
-          className="absolute left-1/2 top-1/2 flex  items-start justify-start overflow-hidden  rounded-2xl  border border-white/[0.1] bg-black p-4 shadow-[0_8px_16px_rgb(0_0_0/0.4)] transition duration-700 group-hover/pin:border-white/[0.2]"
+          className="absolute left-1/2 top-1/2 flex  items-start justify-start overflow-hidden  rounded-2xl  border border-white/[0.1] bg-black shadow-[0_8px_16px_rgb(0_0_0/0.4)] transition duration-700 group-hover/pin:border-white/[0.2]"
         >
           <div className={cn(" relative z-50 ", className)}>{children}</div>
         </div>
@@ -90,9 +90,10 @@ export const PinPerspective = ({
       <div className=" inset-0 -mt-7 h-full w-full  flex-none">
         <div className="absolute inset-x-0 top-0  flex justify-center">
           <a
+            style={{ zIndex: 1000000 }}
             href={href}
             target={"_blank"}
-            className="relative z-10 flex items-center space-x-2 rounded-full bg-zinc-950 px-4 py-0.5 ring-1 ring-white/10 "
+            className="z-100 relative flex items-center space-x-2 rounded-full bg-zinc-950 px-4 py-0.5 ring-1 ring-white/10 "
           >
             <span className="relative z-20 inline-block py-0.5 text-xs font-bold text-white">
               {title}

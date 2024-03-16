@@ -213,13 +213,13 @@ export default function HomePage() {
                   <li>📌 Centrum Konferencyjne WEST GATE</li>
                   <li>
                     <a
-                      className="flex items-center justify-start gap-1"
+                      className="flex items-center justify-start gap-1 underline"
                       href="https://maps.app.goo.gl/6GR4TWbwjL9w6sfAA"
                     >
                       🗺️ Grzybowska 56, Warszawa
                     </a>
                   </li>
-                  <li>До зустрічі на Nail Moment 2023!</li>
+                  <li>До зустрічі на Nail Moment 2024!</li>
                 </ul>
               </div>
               <AnimatedPinDemo />
