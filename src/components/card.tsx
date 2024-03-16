@@ -7,6 +7,7 @@ type CardProps = {
   image: string;
   instagram?: string;
   ticktok?: string;
+  youtube?: string;
 };
 const Card: React.FC<CardProps> = ({
   title,
@@ -14,9 +15,10 @@ const Card: React.FC<CardProps> = ({
   image,
   instagram,
   ticktok,
+  youtube,
 }) => {
   return (
-    <div className="bg-gradient w-full max-w-full overflow-hidden rounded-2xl bg-bottom text-white md:bg-top lg:flex lg:max-w-full">
+    <div className="w-full max-w-full overflow-hidden rounded-2xl bg-gradient bg-bottom text-white md:bg-top lg:flex lg:max-w-full">
       <div
         className="relative h-72 flex-none overflow-hidden rounded-t bg-cover text-center lg:h-auto lg:w-48 lg:rounded-l lg:rounded-t-none"
         title="Woman holding a mug"
@@ -46,6 +48,12 @@ const Card: React.FC<CardProps> = ({
             <div className="flex items-center justify-center gap-2 text-sm">
               <TiktokIcon />
               <p className="leading-none">{ticktok}</p>
+            </div>
+          )}
+          {youtube && (
+            <div className="flex items-center justify-center gap-2 text-sm">
+              <YoutubeIcon />
+              <p className="leading-none">{youtube}</p>
             </div>
           )}
         </div>
@@ -97,4 +105,22 @@ const TiktokIcon = () => (
     />
   </svg>
 );
+const YoutubeIcon = ({ size = 24, color = "currentColor" }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke={color}
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    className="lucide lucide-youtube"
+  >
+    <path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17" />
+    <path d="m10 15 5-3-5-3z" />
+  </svg>
+);
+
 export default Card;

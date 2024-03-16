@@ -76,11 +76,11 @@ export const PricingCardVIP = () => (
   <div className="mx-auto flex max-w-lg flex-col rounded-lg border border-pink-800  bg-gradient bg-cover p-6 text-center text-white shadow">
     <h3 className="mb-4 bg-gradient-to-r from-pink-400 to-orange-500 bg-clip-text text-4xl font-semibold text-transparent">
       <span
-        data-content={"VIP Билет"}
+        data-content={"Квиток"}
         className="relative block before:absolute before:inset-y-0 before:left-0 before:z-0 before:block before:w-full before:animate-gradient-background-1 before:bg-gradient-to-r before:from-pink-400 before:to-orange-300 before:bg-clip-text before:px-2 before:text-center before:text-transparent before:content-[attr(data-content)]"
       >
         <span className="animate-gradient-foreground-1 bg-gradient-to-r from-gradient-purple to-gradient-red bg-clip-text px-2 text-start text-transparent">
-          VIP Билет
+          Квиток
         </span>
       </span>
     </h3>
@@ -94,47 +94,42 @@ export const PricingCardVIP = () => (
     >
       <li className="flex items-center space-x-3">
         <CheckIcon />
-        <span>Вход на конференцию</span>
+        <span>Прохід на конференцію</span>
       </li>
       <li className="flex items-center space-x-3">
         <CheckIcon />
-        <span>Кофе-брейк</span>
-      </li>
-      <li className="flex items-center space-x-3">
-        <CheckIcon />
-        <span>
-          <span className="bg-gradient-to-r from-pink-400 to-violet-300 bg-clip-text text-transparent">
-            Подарки{" "}
-          </span>
-          от спонсоров
-        </span>
+        <span>Крутий нетворкінг зі спікерами та учасниками конференції</span>
       </li>
       <li className="flex items-center space-x-3">
         <CheckIcon />
         <span>
           <span className="bg-gradient-to-r from-pink-400 to-violet-300 bg-clip-text text-transparent">
-            Подарки{" "}
+            Подарунки
           </span>
-          от организаторов
+          від наших спонсорів на суму понад 200zł
         </span>
       </li>
       <li className="flex items-center space-x-3">
         <CheckIcon />
-        <span>Места в первых рядах</span>
+        <span>Крутий нетворкінг зі спікерами та учасниками конференції</span>
       </li>
       <li className="flex items-center space-x-3">
         <CheckIcon />
-        <span>Обед со спикерами</span>
+        <span>Кава-брейк і нереальна фото зона для твого контенту</span>
       </li>
       <li className="flex items-center space-x-3">
         <CheckIcon />
         <span>
-          Возможность лично пообщаться с крутыми экспертами в своей нише
+          Професійний фотограф і доступ до фотографій після конференції
         </span>
+      </li>
+      <li className="flex items-center space-x-3">
+        <CheckIcon />
+        <span>Живий Nail-маркет від топових брендів</span>
       </li>
     </ul>
     <div className="w-30 flex h-10 items-center justify-center rounded-md bg-red-500">
-      SOLD OUT
+      Купити
     </div>
   </div>
 );

@@ -18,6 +18,7 @@ export default {
       backgroundImage: {
         pattern: "url('/looper-pattern.svg')",
         gradient: 'url("/gradient.webp")',
+        bg_new: 'url("/bg.svg")',
         stars: 'url("/stars.webp")',
       },
       gradientColorStops: {
