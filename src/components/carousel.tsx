@@ -64,37 +64,37 @@ export default Carousel;
 
 const cards = [
   {
-    url: "prev/1.jpeg",
+    url: "prev_conf/1.jpeg",
     title: "Title 1",
     id: 1,
   },
   {
-    url: "prev/2.jpeg",
+    url: "prev_conf/2.jpeg",
     title: "Title 2",
     id: 2,
   },
   {
-    url: "prev/3.jpeg",
+    url: "prev_conf/3.jpeg",
     title: "Title 3",
     id: 3,
   },
   {
-    url: "prev/4.jpeg",
+    url: "prev_conf/4.jpeg",
     title: "Title 4",
     id: 4,
   },
   {
-    url: "prev/5.jpeg",
+    url: "prev_conf/5.jpeg",
     title: "Title 5",
     id: 5,
   },
   {
-    url: "prev/6.jpeg",
+    url: "prev_conf/6.jpeg",
     title: "Title 6",
     id: 6,
   },
   {
-    url: "prev/7.jpeg",
+    url: "prev_conf/7.jpeg",
     title: "Title 7",
     id: 7,
   },
