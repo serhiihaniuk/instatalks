@@ -1,7 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
 import Card from "~/components/card";
-import Line from "~/components/line";
-import GoogleMap from "~/components/map";
 import Image from "next/image";
 import { cn, formatSubscribers } from "~/utils";
 import { PricingCardVIP } from "~/components/pricing-card";
@@ -18,7 +16,7 @@ export default function HomePage() {
         backgroundRepeat: "no-repeat",
         backgroundPosition: "bottom",
       }}
-      className="w-max-[100vw] relative flex min-h-screen flex-col items-center justify-center overflow-hidden pb-6 text-white "
+      className="w-max-[100vw] relative flex min-h-screen flex-col items-center justify-center pb-6 text-white "
     >
       <div className="pointer-events-none fixed inset-0">
         <div
@@ -63,10 +61,7 @@ export default function HomePage() {
         </section>
 
         <TracingBeam className="pl-6">
-          <section
-            id="details"
-            className="container grid grid-cols-[1fr] gap-2"
-          >
+          <section id="details" className="container relative">
             <div className="relative grid grid-flow-row gap-5 pl-4 md:grid-cols-2">
               <div className="flex max-w-[320px] flex-col gap-2 self-start md:sticky md:top-8 md:max-w-[500px]">
                 <h2 className="mb-5 text-start text-3xl font-bold md:text-4xl">
@@ -184,7 +179,7 @@ export default function HomePage() {
           </section>
           <section
             id="book"
-            className="container relative flex flex-col items-center justify-center gap-7 md:py-20"
+            className="container relative mt-10 flex flex-col items-center justify-center gap-7 md:py-20"
           >
             <h2 className="block max-w-[720px] px-5 text-center text-3xl font-extrabold md:text-3xl">
               Встигни забронювати свій квиток на найбільш{" "}
