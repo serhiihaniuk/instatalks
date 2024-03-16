@@ -24,3 +24,14 @@ section,
 footer {
   z-index: 15555;
 }
+body section .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}

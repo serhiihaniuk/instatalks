@@ -3,9 +3,8 @@ import { motion } from "framer-motion";
 import React, { useState } from "react";
 import { cn } from "~/utils";
 import Image from "next/image";
-import GoogleMap from "./map";
 
-export function AnimatedPinDemo() {
+export function MapPin() {
   return (
     <div className="flex h-[360px] w-[360px] items-center justify-center ">
       <PinContainer
@@ -86,12 +85,13 @@ export const PinPerspective = ({
   href?: string;
 }) => {
   return (
-    <motion.div className="pointer-events-none  z-[60] flex h-80 w-96 items-center justify-center opacity-0 transition duration-500 group-hover/pin:opacity-100">
+    <motion.div className=" z-[10] flex h-80 w-96 items-center justify-center opacity-0 transition duration-500 group-hover/pin:opacity-100">
       <div className=" inset-0 -mt-7 h-full w-full  flex-none">
         <div className="absolute inset-x-0 top-0  flex justify-center">
           <a
             style={{ zIndex: 1000000 }}
             href={href}
+            onClick={() => console.log(1234)}
             target={"_blank"}
             className="z-100 relative flex items-center space-x-2 rounded-full bg-zinc-950 px-4 py-0.5 ring-1 ring-white/10 "
           >

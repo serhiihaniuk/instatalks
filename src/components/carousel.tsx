@@ -1,7 +1,6 @@
 "use client";
 import { motion, useTransform, useScroll } from "framer-motion";
 import { useRef } from "react";
-import { cn } from "~/utils";
 import Image from "next/image";
 
 export const Carousel = () => {
@@ -18,17 +17,12 @@ const HorizontalScrollCarousel = () => {
     target: targetRef,
   });
 
-  const x = useTransform(scrollYProgress, [0, 1], ["1%", "-95%"]);
+  const x = useTransform(scrollYProgress, [0, 1], ["1%", "-92%"]);
 
   return (
-    <section ref={targetRef} className="relative h-[600vh]">
+    <section ref={targetRef} className="relative mt-20 h-[600vh]">
       <h2 className="mb-5 text-center text-3xl font-bold md:text-4xl">
-        <span
-          className={cn(
-            "absolute top-0 block h-7 w-7 scale-125 rounded-2xl bg-amber-100 blur-xl",
-          )}
-        />
-        <span className="animate-gradient-foreground-1 bg-gradient-to-r from-gradient-blue to-gradient-teal bg-clip-text px-2 text-center text-transparent">
+        <span className="bg-gradient-to-r from-gradient-blue to-gradient-teal bg-clip-text px-2 text-center text-transparent">
           Попередня конференція
         </span>
       </h2>
@@ -47,7 +41,7 @@ const Card = ({ card }: { card: TCard }) => {
   return (
     <div
       key={card.id}
-      className="group relative h-[90vh] w-[800px] overflow-hidden bg-neutral-200"
+      className="group relative h-[80vh] w-[800px] overflow-hidden bg-neutral-200"
     >
       <Image
         src={card.url}

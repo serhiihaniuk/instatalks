@@ -5,9 +5,10 @@ import { cn, formatSubscribers } from "~/utils";
 import { PricingCardVIP } from "~/components/pricing-card";
 import Sponsor from "~/components/sponsor";
 import { conferenceSpeakers } from "~/speakers";
-import { AnimatedPinDemo } from "~/components/pin";
+import { MapPin } from "~/components/pin";
 import { TracingBeam } from "~/components/track";
 import Carousel from "~/components/carousel";
+import { Reviews } from "~/components/review";
 
 export default function HomePage() {
   return (
@@ -165,9 +166,9 @@ export default function HomePage() {
                   Кофе-брейк и нереальная фото зона для твоего контента.
                 </li>
               </ul> */}
-            <p className="max-w-[500px] gap-2 px-5 text-center text-2xl">
-              Розіграші подарунків від спонсорів заходу. Staleks_polska, Dїvna,
-              JZ Nails Group{" "}
+            <p className="flex max-w-[500px] flex-col gap-2 px-5 text-center text-2xl">
+              Розіграші подарунків від спонсорів заходу.{" "}
+              <span>Staleks_polska, Dїvna, JZ Nails Group </span>
               {/* <span className="my-3 block text-4xl font-extrabold">МЕГА BOX</span>
                 <span className="text-4xl font-extrabold uppercase">
                   на сумму{" "}
@@ -219,7 +220,7 @@ export default function HomePage() {
                     <li>До зустрічі на Nail Moment 2024!</li>
                   </ul>
                 </div>
-                <AnimatedPinDemo />
+                <MapPin />
               </div>
             </div>
           </section>
@@ -247,6 +248,9 @@ export default function HomePage() {
               />
               {/* <Sponsor src="/s6.png" href="https://instagram.com/side.eu" /> */}
             </div>
+          </section>
+          <section>
+            <Reviews />
           </section>
           <section>
             <Carousel />

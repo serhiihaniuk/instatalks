@@ -19,10 +19,7 @@ const Card: React.FC<CardProps> = ({
 }) => {
   return (
     <div className="w-full max-w-full overflow-hidden rounded-2xl bg-gradient bg-bottom text-white md:bg-top lg:flex lg:max-w-full">
-      <div
-        className="relative h-72 flex-none overflow-hidden rounded-t bg-cover text-center lg:h-auto lg:w-48 lg:rounded-l lg:rounded-t-none"
-        title="Woman holding a mug"
-      >
+      <div className="relative h-[500px] flex-none overflow-hidden rounded-t bg-cover text-center lg:h-auto lg:w-48 lg:rounded-l lg:rounded-t-none">
         <Image
           src={image}
           width={300}
