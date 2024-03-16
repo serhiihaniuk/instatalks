@@ -7,6 +7,7 @@ import Sponsor from "~/components/sponsor";
 import { conferenceSpeakers } from "~/speakers";
 import { AnimatedPinDemo } from "~/components/pin";
 import { TracingBeam } from "~/components/track";
+import Carousel from "~/components/carousel";
 
 export default function HomePage() {
   return (
@@ -60,7 +61,7 @@ export default function HomePage() {
           </div>
         </section>
 
-        <TracingBeam className="pl-6">
+        <TracingBeam className="h-max-full pl-6">
           <section id="details" className="container relative">
             <div className="relative grid grid-flow-row gap-5 pl-4 md:grid-cols-2">
               <div className="flex max-w-[320px] flex-col gap-2 self-start md:sticky md:top-8 md:max-w-[500px]">
@@ -246,6 +247,9 @@ export default function HomePage() {
               />
               {/* <Sponsor src="/s6.png" href="https://instagram.com/side.eu" /> */}
             </div>
+          </section>
+          <section>
+            <Carousel />
           </section>
           <section className="container grid grid-rows-1 items-center justify-center justify-items-center gap-5 px-5 md:pt-12 ">
             <div className="mt-5 flex max-w-[320px] flex-col items-center justify-center gap-2 self-start md:mt-0 md:max-w-[500px]">
