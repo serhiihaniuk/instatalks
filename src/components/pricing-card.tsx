@@ -85,7 +85,7 @@ export const PricingCardVIP = () => (
       </span>
     </h3>
     <div className="my-8 flex items-baseline justify-center">
-      <span className="mr-2 text-5xl font-extrabold">200</span>
+      <span className="mr-2 text-5xl font-extrabold">429</span>
       <span className="text-gray-500 dark:text-gray-400">/zł</span>
     </div>
     <ul

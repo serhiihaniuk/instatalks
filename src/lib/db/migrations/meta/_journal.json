@@ -1,0 +1,13 @@
+{
+  "version": "5",
+  "dialect": "pg",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1710678436609,
+      "tag": "0000_rapid_bill_hollister",
+      "breakpoints": true
+    }
+  ]
+}

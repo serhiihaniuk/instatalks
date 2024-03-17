@@ -21,12 +21,12 @@ const HorizontalScrollCarousel = () => {
 
   return (
     <section ref={targetRef} className="relative mt-20 h-[600vh]">
+      <h2 className="block translate-y-16 pr-16 text-center text-3xl font-bold md:text-4xl">
+        <span className="bg-gradient-to-r from-gradient-blue to-gradient-teal bg-clip-text px-2 text-center text-transparent ">
+          Попередня конференція
+        </span>
+      </h2>
       <div className="sticky top-0 flex h-screen items-center overflow-hidden">
-        <h2 className="block rotate-180 pr-16 text-center text-3xl font-bold [writing-mode:vertical-lr] md:text-4xl">
-          <span className="bg-gradient-to-r from-gradient-blue to-gradient-teal bg-clip-text px-2 text-center text-transparent ">
-            Попередня конференція
-          </span>
-        </h2>
         <motion.div style={{ x }} className="flex gap-4">
           {cards.map((card) => {
             return <Card card={card} key={card.id} />;
