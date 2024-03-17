@@ -9,7 +9,7 @@ import { MapPin } from "~/components/pin";
 import { TracingBeam } from "~/components/track";
 import Carousel from "~/components/carousel";
 import { Reviews } from "~/components/review";
-import { useRef } from "react";
+import SpeakerDialog from "~/components/dialog";
 
 export default function HomePage() {
   return (
@@ -226,7 +226,7 @@ export default function HomePage() {
               </div>
             </section>
 
-            <section className="container relative my-24  md:my-2 md:pt-20">
+            <section className="align-center container relative my-[75px] flex flex-col justify-center md:my-2 md:pt-20">
               <h2 className="mb-1 text-center text-4xl font-bold md:text-4xl">
                 <span className="animate-gradient-x bg-gradient-to-r from-amber-500 to-rose-500 bg-clip-text text-transparent">
                   Наші спонсори
@@ -240,6 +240,7 @@ export default function HomePage() {
                 <Sponsor src="/s5.png" href="https://instagram.com/staleks_polska" />
                 {/* <Sponsor src="/s6.png" href="https://instagram.com/side.eu" /> */}
               </div>
+              <SpeakerDialog />
             </section>
             <section>
               <Reviews />
