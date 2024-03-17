@@ -226,7 +226,7 @@ export default function HomePage() {
               </div>
             </section>
 
-            <section className="align-center container relative my-[75px] flex flex-col justify-center md:my-2 md:pt-20">
+            <section className="align-center container relative my-[75px] flex flex-col justify-center">
               <h2 className="mb-1 text-center text-4xl font-bold md:text-4xl">
                 <span className="animate-gradient-x bg-gradient-to-r from-amber-500 to-rose-500 bg-clip-text text-transparent">
                   Наші спонсори
