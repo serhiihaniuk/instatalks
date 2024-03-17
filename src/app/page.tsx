@@ -193,7 +193,7 @@ export default function HomePage() {
                 <PricingCardVIP />
               </div>
             </section>
-            <section className="container mt-16 grid grid-cols-[1fr] gap-2">
+            <section className="container mt-16 grid grid-cols-[1fr] items-center justify-center gap-2">
               <div className="relative flex flex-col gap-5 pl-4">
                 <div className="flex w-full flex-col gap-2 self-start md:grid md:grid-cols-[250px_1fr] md:grid-rows-1 md:justify-center md:justify-items-center">
                   <div>
@@ -219,20 +219,20 @@ export default function HomePage() {
                       <li>До зустрічі на Nail Moment 2024!</li>
                     </ul>
                   </div>
-                  <div className="relative -translate-y-2">
+                  <div className="relative flex -translate-y-2 items-center justify-center">
                     <MapPin />
                   </div>
                 </div>
               </div>
             </section>
 
-            <section className="align-center container relative my-[75px] flex flex-col justify-center">
+            <section className="align-center container relative mb-[155px] mt-[95px] flex flex-col justify-center">
               <h2 className="mb-1 text-center text-4xl font-bold md:text-4xl">
                 <span className="animate-gradient-x bg-gradient-to-r from-amber-500 to-rose-500 bg-clip-text text-transparent">
                   Наші спонсори
                 </span>{" "}
               </h2>
-              <div className="flex flex-wrap items-center justify-center gap-7 pb-2">
+              <div className="mb-8 flex flex-wrap items-center justify-center gap-7 pb-2">
                 {/* <Sponsor src="/s1.png" href="https://instagram.com/4mani_shop" /> */}
                 {/* <Sponsor src="/s2.png" href="https://instagram.com/konsulpro.pl" /> */}
                 <Sponsor src="/s3.png" href="https://instagram.com/divna.official" />

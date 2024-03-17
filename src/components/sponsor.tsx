@@ -7,13 +7,13 @@ type SponsorProps = {
 };
 const Sponsor: FC<SponsorProps> = ({ src, href }) => {
   return (
-    <a className="block" href={href} target="_blank">
+    <a className="h-min-[100px] relative block" href={href} target="_blank">
       <Image
         src={src}
-        className="max-w-[150px]"
+        className="h-min-[100px] max-w-[350px] object-contain"
         alt=""
         width={300}
-        height={500}
+        height={200}
       />
     </a>
   );
