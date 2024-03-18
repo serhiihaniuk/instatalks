@@ -34,10 +34,10 @@ export default function HomePage() {
           <div className="mt-5">
             <Image src="/main_logo.png" alt="" width={300} height={300} />
           </div>
+          <h2 className="text-center text-[45px] font-bold text-white">2024</h2>
           <h1 className="text-center text-2xl font-normal text-white">
             Конференція для майстрів манікюру та педикюру!
           </h1>
-          <h2 className="text-center text-xl font-normal text-white">2024</h2>
           <p className="max-w-[520px] px-5 text-center text-lg font-thin">
             Конференція на якій ти дізнаєшся останню, трендову інформацію нігтьового світу,
             надихнешся і піднімеш свої знання на новий рівень. Ми об'єднали найактуальніші теми, які
@@ -45,12 +45,6 @@ export default function HomePage() {
           </p>
           <h3 className="text-center text-xl font-normal text-white">28 квітня у Варшаві</h3>
           <div className="flex flex-col text-center md:flex-row">
-            <a
-              href="#details"
-              className="mb-2 mr-2 rounded-lg border border-emerald-800 px-5 py-2.5 text-sm font-medium text-white hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300"
-            >
-              Детальніше
-            </a>
             <a
               href="#book"
               className="mb-2 mr-2 rounded-lg border border-pink-500 px-5 py-2.5 text-sm font-medium text-white hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300"
@@ -66,19 +60,8 @@ export default function HomePage() {
               <div className="relative grid grid-flow-row gap-5 pl-4 md:grid-cols-2">
                 <div className="flex max-w-[320px] flex-col gap-2 self-start md:sticky md:top-8 md:max-w-[500px]">
                   <h2 className="mb-5 text-start text-3xl font-bold md:text-4xl">
-                    Теми конференції{" "}
-                    <span
-                      className={cn(
-                        "absolute top-0 block h-7 w-7 scale-125 rounded-2xl bg-amber-100 blur-xl",
-                      )}
-                    />
-                    <span
-                      data-content={"конференції"}
-                      className="relative block before:absolute before:inset-y-0 before:left-0 before:z-0 before:block before:w-full before:animate-gradient-background-1 before:bg-gradient-to-r before:from-pink-400 before:to-orange-300 before:bg-clip-text before:px-2 before:text-start before:text-transparent before:content-[attr(data-content)]"
-                    >
-                      <span className="animate-gradient-foreground-1 bg-gradient-to-r from-gradient-blue to-gradient-teal bg-clip-text px-2 text-start text-transparent">
-                        конференції
-                      </span>
+                    <span className="bg-gradient-to-r from-gradient-blue to-gradient-teal bg-clip-text text-start text-transparent">
+                      Теми конференції NAIL MOMENT
                     </span>
                   </h2>
                   <ul className="list-none space-y-7">
@@ -142,47 +125,36 @@ export default function HomePage() {
             </section>
             <section className="container mt-16 flex flex-col items-center justify-center gap-7 pb-12">
               <h2 className="mt-2 block max-w-[720px] px-5 text-center text-4xl font-extrabold md:text-5xl">
-                <span
-                  data-content={"На тебе чекають"}
-                  className="relative block before:absolute before:inset-y-0 before:left-0 before:z-0 before:block before:w-full before:animate-gradient-background-1 before:bg-gradient-to-r before:from-pink-400 before:to-orange-300 before:bg-clip-text before:px-2 before:text-start before:text-transparent before:content-[attr(data-content)]"
-                >
-                  <span className="animate-gradient-foreground-1 bg-gradient-to-r from-gradient-teal to-gradient-yellow bg-clip-text px-2 text-start text-transparent">
-                    {"На тебе чекають"}
-                  </span>
+                <span className="bg-gradient-to-r from-gradient-teal to-gradient-yellow bg-clip-text px-2 text-start text-transparent">
+                  {"На тебе чекають"}
                 </span>
               </h2>
-              {/* <ul className="space-y-5 text-start">
-                <li className="flex gap-2">
-                  <CheckIcon />
-                  Розіграші подарунків від спонсорів заходу.
-                </li>
-                <li className="flex gap-2">
-                  <CheckIcon />
-                  Крутой нетворкинг со спикерами и участниками конференции
-                </li>
-                <li className="flex gap-2">
-                  <CheckIcon />
-                  Кофе-брейк и нереальная фото зона для твоего контента.
-                </li>
-              </ul> */}
-              <p className="flex max-w-[500px] flex-col gap-2 px-5 text-center text-2xl">
-                Розіграші подарунків від спонсорів заходу.{" "}
-                <span>Staleks_polska, Dїvna, JZ Nails Group </span>
-                {/* <span className="my-3 block text-4xl font-extrabold">МЕГА BOX</span>
-                <span className="text-4xl font-extrabold uppercase">
-                  на сумму{" "}
-                  <span className="animate-gradient-x block bg-gradient-to-r from-pink-500 to-violet-500 bg-clip-text text-transparent">
-                    2000zł{" "}
-                  </span>
-                  <span className="block">от JZ Nails Group</span>
-                </span> */}
-              </p>
+              <div className="flex max-w-[500px] flex-col gap-2 px-5 text-center text-2xl">
+                <span className="text-start">Розіграші подарунків від спонсорів заходу: </span>
+                <ul className="flex flex-col gap-10">
+                  <li className="flex justify-center">
+                    <Sponsor src="/s3.png" href="https://instagram.com/divna.official" />
+                  </li>
+                  <li className="flex justify-center">
+                    <Sponsor src="/s6.png" href="https://instagram.com/divna.official" />
+                  </li>
+                  <li className="flex justify-center">
+                    <Sponsor src="/s4.png" href="https://instagram.com/jznails_group" />
+                  </li>
+                  <li className="flex justify-center">
+                    <Sponsor src="/s5.png" href="https://instagram.com/staleks_polska" />
+                  </li>
+                  <li className="flex justify-center">
+                    <Sponsor src="/s8.png" href="https://instagram.com/divna.official" />
+                  </li>
+                </ul>
+              </div>
             </section>
             <section
               id="book"
               className="container relative mt-10 flex flex-col items-center justify-center gap-7"
             >
-              <h2 className="block max-w-[720px] px-5 text-center text-3xl font-extrabold md:text-3xl">
+              <h2 className="block max-w-[720px] px-5 text-center text-2xl font-extrabold">
                 Встигни забронювати свій квиток на найбільш{" "}
                 <span className="animate-gradient-x bg-gradient-to-r from-pink-500 to-violet-500 bg-clip-text text-transparent">
                   ТРЕНДОВУ
@@ -226,19 +198,18 @@ export default function HomePage() {
               </div>
             </section>
 
-            <section className="align-center container relative mb-[155px] mt-[95px] flex flex-col justify-center">
+            <section className="align-center container relative  my-[95px] flex flex-col justify-center">
               <h2 className="mb-1 text-center text-4xl font-bold md:text-4xl">
-                <span className="animate-gradient-x bg-gradient-to-r from-amber-500 to-rose-500 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-amber-500 to-rose-500 bg-clip-text text-transparent">
                   Наші спонсори
-                </span>{" "}
+                </span>
               </h2>
-              <div className="mb-8 flex flex-wrap items-center justify-center gap-7 pb-2">
-                {/* <Sponsor src="/s1.png" href="https://instagram.com/4mani_shop" /> */}
-                {/* <Sponsor src="/s2.png" href="https://instagram.com/konsulpro.pl" /> */}
+              <div className="mb-8 flex flex-wrap items-center justify-center gap-14 pb-2">
                 <Sponsor src="/s3.png" href="https://instagram.com/divna.official" />
-                <Sponsor src="/s4.png" href="https://instagram.com/jznails_group" />
                 <Sponsor src="/s5.png" href="https://instagram.com/staleks_polska" />
-                {/* <Sponsor src="/s6.png" href="https://instagram.com/side.eu" /> */}
+                <Sponsor src="/s4.png" href="https://instagram.com/jznails_group" />
+                <Sponsor src="/s7.png" href="https://instagram.com/staleks_polska" />
+                <Sponsor src="/s8.png" href="https://instagram.com/staleks_polska" />
               </div>
               <SpeakerDialog />
             </section>
@@ -250,10 +221,10 @@ export default function HomePage() {
             </section>
             <section className="container grid grid-rows-1 items-center justify-center justify-items-center gap-5 px-5 md:pt-12 ">
               <div className="mt-5 flex max-w-[320px] flex-col items-center justify-center gap-2 self-start md:mt-0 md:max-w-[500px]">
-                <h2 className="text-center text-2xl font-bold md:text-2xl">Є питання? </h2>
+                <h2 className="text-center text-2xl font-bold md:text-2xl">Є питання?</h2>
                 <p className="text-center">
                   <a target="_blank" href="https://t.me/+THVRcBRhyWc5OWY0">
-                    Напиши до нас в підтримку (__ссылка на телеграмм канал__)
+                    Напиши до нас в підтримку
                     <svg
                       className="ml-5 inline-block h-7 w-7"
                       fill="currentColor"

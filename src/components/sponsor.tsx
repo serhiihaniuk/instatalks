@@ -10,7 +10,7 @@ const Sponsor: FC<SponsorProps> = ({ src, href }) => {
     <a className="h-min-[100px] relative block" href={href} target="_blank">
       <Image
         src={src}
-        className="h-min-[100px] max-w-[350px] object-contain"
+        className="max-h-[225px] min-h-[100px] max-w-[300px] object-contain"
         alt=""
         width={300}
         height={200}

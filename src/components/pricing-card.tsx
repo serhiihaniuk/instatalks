@@ -61,14 +61,10 @@ export const PricingCardRegular = () => (
         <span>Обед со спикерами</span>
       </li>
       <li className="flex items-center space-x-3 pl-[33px] text-gray-300 line-through">
-        <span>
-          Возможность лично пообщаться с крутыми экспертами в своей нише
-        </span>
+        <span>Возможность лично пообщаться с крутыми экспертами в своей нише</span>
       </li>
     </ul>
-    <div className="w-30 flex h-10 items-center justify-center rounded-md bg-red-500">
-      SOLD OUT
-    </div>
+    <div className="w-30 flex h-10 items-center justify-center rounded-md bg-red-500">SOLD OUT</div>
   </div>
 );
 
@@ -88,23 +84,16 @@ export const PricingCardVIP = () => (
       <span className="mr-2 text-5xl font-extrabold">429</span>
       <span className="text-gray-500 dark:text-gray-400">/zł</span>
     </div>
-    <ul
-      role="list"
-      className="mb-8 block space-y-4 bg-stars bg-no-repeat text-left"
-    >
+    <ul role="list" className="mb-8 block space-y-4 bg-stars bg-no-repeat text-left">
       <li className="flex items-center space-x-3">
         <CheckIcon />
         <span>Прохід на конференцію</span>
       </li>
       <li className="flex items-center space-x-3">
         <CheckIcon />
-        <span>Крутий нетворкінг зі спікерами та учасниками конференції</span>
-      </li>
-      <li className="flex items-center space-x-3">
-        <CheckIcon />
         <span>
           <span className="bg-gradient-to-r from-pink-400 to-violet-300 bg-clip-text text-transparent">
-            Подарунки
+            Подарунки{" "}
           </span>
           від наших спонсорів на суму понад 200zł
         </span>
@@ -119,17 +108,13 @@ export const PricingCardVIP = () => (
       </li>
       <li className="flex items-center space-x-3">
         <CheckIcon />
-        <span>
-          Професійний фотограф і доступ до фотографій після конференції
-        </span>
+        <span>Професійний фотограф і доступ до фотографій після конференції</span>
       </li>
       <li className="flex items-center space-x-3">
         <CheckIcon />
         <span>Живий Nail-маркет від топових брендів</span>
       </li>
     </ul>
-    <div className="w-30 flex h-10 items-center justify-center rounded-md bg-red-500">
-      Купити
-    </div>
+    <div className="w-30 flex h-10 items-center justify-center rounded-md bg-red-500">Купити</div>
   </div>
 );

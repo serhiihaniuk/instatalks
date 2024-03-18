@@ -1,9 +1,8 @@
 export const conferenceSpeakers = [
   {
     name: "Masha Create",
-    instagram:
-      "https://www.instagram.com/mashacreate.nails?igsh=dmRjcGFybTVmYmFu",
-    topic: "МК «Всі секрети тонкого покриття з матеріалами Easy»",
+    instagram: "https://www.instagram.com/mashacreate.nails?igsh=dmRjcGFybTVmYmFu",
+    topic: "Майстер-клас «Всі секрети тонкого покриття з матеріалами Easy»",
     description:
       "Блогерка та інструкторка яку знають всі. На її відео зростали всі майстри. Більш ніж 1 мільйонів підписників на YouTube. Засновниця бренду Easy.",
     followersInstagram: 300000, // Инста 300 к
