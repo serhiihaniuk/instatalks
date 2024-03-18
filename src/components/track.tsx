@@ -1,8 +1,8 @@
 "use client";
+/* @ts-ignore */
+import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 import React, { useEffect, useRef, useState } from "react";
-import { motion, useTransform, useScroll, useVelocity, useSpring } from "framer-motion";
 import { cn } from "~/utils";
-
 export const TracingBeam = ({
   children,
   className,
@@ -21,10 +21,36 @@ export const TracingBeam = ({
 
   useEffect(() => {
     if (contentRef.current) {
-      const currentHeight: number = contentRef.current.offsetHeight as number;
+      // @ts-ignore asfdsadfasdf
+      const currentHeight: number = contentRef.current?.offsetHeight;
       setSvgHeight(currentHeight);
     }
   }, []);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (contentRef.current) {
+        // @ts-ignore asfdsadfasdf
+        const currentHeight: number = contentRef.current?.offsetHeight;
+        if (currentHeight !== svgHeight) {
+          setSvgHeight(currentHeight);
+        }
+      }
+    };
+
+    window!.addEventListener("resize", handleResize);
+    window!.addEventListener("load", handleResize);
+    const int = setInterval(() => {
+      handleResize();
+    }, 2000);
+    // @eslint-disable-next-line
+    return () => {
+      // @ts-expect-error
+      window!.removeEventListener("resize", handleResize);
+      window!.removeEventListener("load", handleResize);
+      clearInterval(int);
+    };
+  }, [svgHeight]);
 
   const y1 = useSpring(useTransform(scrollYProgress, [0, 0.8], [50, svgHeight]), {
     stiffness: 500,
