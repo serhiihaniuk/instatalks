@@ -208,8 +208,8 @@ export default function HomePage() {
                 <Sponsor src="/s3.png" href="https://instagram.com/divna.official" />
                 <Sponsor src="/s5.png" href="https://instagram.com/staleks_polska" />
                 <Sponsor src="/s4.png" href="https://instagram.com/jznails_group" />
-                <Sponsor src="/s7.png" href="https://instagram.com/staleks_polska" />
                 <Sponsor src="/s8.png" href="https://instagram.com/staleks_polska" />
+                <Sponsor src="/s7.png" href="https://instagram.com/staleks_polska" />
               </div>
               <SpeakerDialog />
             </section>
