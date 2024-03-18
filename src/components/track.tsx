@@ -1,5 +1,4 @@
 "use client";
-/* @ts-ignore */
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 import React, { useEffect, useRef, useState } from "react";
 import { cn } from "~/utils";

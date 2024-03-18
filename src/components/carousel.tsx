@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Pagination } from "swiper/modules";
+import { Pagination } from "swiper/modules";
 
 export const Carousel = () => {
   return (
@@ -26,8 +26,7 @@ const HorizontalScrollCarousel = () => {
       grabCursor={true}
       centeredSlides={true}
       slidesPerView={1}
-      loop
-      modules={[Autoplay, Pagination]}
+      modules={[Pagination]}
       className="prev"
       autoplay={{
         delay: 2000,

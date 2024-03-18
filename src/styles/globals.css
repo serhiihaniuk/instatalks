@@ -39,8 +39,10 @@ body section .swiper-slide {
 .swiper.prev {
   height: 80vh;
   margin-right: 8px;
+  width: 100%;
 }
 
 .swiper.prev .swiper-slide {
   height: 100%;
+  width: 100%;
 }
