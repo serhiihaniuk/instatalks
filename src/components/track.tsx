@@ -45,7 +45,6 @@ export const TracingBeam = ({
     }, 2000);
     // @eslint-disable-next-line
     return () => {
-      // @ts-expect-error
       window!.removeEventListener("resize", handleResize);
       window!.removeEventListener("load", handleResize);
       clearInterval(int);

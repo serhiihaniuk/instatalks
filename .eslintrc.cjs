@@ -28,7 +28,9 @@ const config = {
     "@typescript-eslint/no-unused-vars": ["warn", { argsIgnorePattern: "^_" }],
     "@typescript-eslint/ban-ts-comment": ["warn"],
     "@typescript-eslint/no-unsafe-assignment": ["warn"],
+    "@typescript-eslint/no-unsafe-call": ["warn"],
     "@typescript-eslint/no-unnecessary-type-assertion": ["warn"],
+    "@typescript-eslint/no-unsafe-member-access": ["warn"],
     "@typescript-eslint/no-misused-promises": [
       2,
       {
