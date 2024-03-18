@@ -136,7 +136,7 @@ export default function HomePage() {
                     <Sponsor src="/s3.png" href="https://instagram.com/divna.official" />
                   </li>
                   <li className="flex justify-center">
-                    <Sponsor src="/s6.png" href="https://instagram.com/divna.official" />
+                    <Sponsor src="/s7.png" href="https://www.instagram.com/divas_shop.pl" />
                   </li>
                   <li className="flex justify-center">
                     <Sponsor src="/s4.png" href="https://instagram.com/jznails_group" />
@@ -145,7 +145,10 @@ export default function HomePage() {
                     <Sponsor src="/s5.png" href="https://instagram.com/staleks_polska" />
                   </li>
                   <li className="flex justify-center">
-                    <Sponsor src="/s8.png" href="https://instagram.com/divna.official" />
+                    <Sponsor
+                      src="/s8.png"
+                      href="https://www.instagram.com/sama_wraps?igsh=ZTZkbm9iMG9odWlv"
+                    />
                   </li>
                 </ul>
               </div>
@@ -208,8 +211,11 @@ export default function HomePage() {
                 <Sponsor src="/s3.png" href="https://instagram.com/divna.official" />
                 <Sponsor src="/s5.png" href="https://instagram.com/staleks_polska" />
                 <Sponsor src="/s4.png" href="https://instagram.com/jznails_group" />
-                <Sponsor src="/s8.png" href="https://instagram.com/staleks_polska" />
-                <Sponsor src="/s7.png" href="https://instagram.com/staleks_polska" />
+                <Sponsor
+                  src="/s8.png"
+                  href="https://www.instagram.com/sama_wraps?igsh=ZTZkbm9iMG9odWlv"
+                />
+                <Sponsor src="/s7.png" href="https://www.instagram.com/divas_shop.pl" />
               </div>
               <SpeakerDialog />
             </section>
