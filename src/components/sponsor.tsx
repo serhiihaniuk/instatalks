@@ -62,7 +62,7 @@ export const DivasShop = () => {
       href="https://www.instagram.com/divas_shop.pl"
       target="_blank"
     >
-      <Image src="/s7.png" className="w-[400px] object-contain" alt="" width={300} height={200} />
+      <Image src="/s7.png" className="w-[360px] object-contain" alt="" width={300} height={200} />
     </a>
   );
 };

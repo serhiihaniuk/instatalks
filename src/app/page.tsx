@@ -136,7 +136,7 @@ export default function HomePage() {
                   {"На тебе чекають"}
                 </span>
               </h2>
-              <div className="flex max-w-[500px] flex-col gap-2 px-5 text-center text-2xl">
+              <div className="flex max-w-full flex-col gap-2 px-5 text-center text-2xl md:max-w-[500px]">
                 <span className="text-start">Розіграші подарунків від спонсорів заходу: </span>
                 <div className="flex flex-col items-center justify-start gap-8 py-8">
                   {Sponsors.map((S, i) => (
