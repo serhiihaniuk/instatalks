@@ -1,7 +1,7 @@
 import { drizzle } from "drizzle-orm/vercel-postgres";
 import { sql } from "@vercel/postgres";
-import { pgTable, serial, text, timestamp, uniqueIndex } from "drizzle-orm/pg-core";
-import { InferInsertModel } from "drizzle-orm";
+import { pgTable, serial, text, timestamp } from "drizzle-orm/pg-core";
+import { type InferInsertModel } from "drizzle-orm";
 
 // Use this object to send drizzle queries to your DB
 export const db = drizzle(sql);

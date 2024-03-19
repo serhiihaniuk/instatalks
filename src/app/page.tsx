@@ -3,7 +3,7 @@ import Card from "~/components/card";
 import Image from "next/image";
 import { cn, formatSubscribers } from "~/utils";
 import { PricingCardVIP } from "~/components/pricing-card";
-import Sponsor from "~/components/sponsor";
+import { Sponsors } from "~/components/sponsor";
 import { conferenceSpeakers } from "~/speakers";
 import { MapPin } from "~/components/pin";
 import { TracingBeam } from "~/components/track";
@@ -131,26 +131,11 @@ export default function HomePage() {
               </h2>
               <div className="flex max-w-[500px] flex-col gap-2 px-5 text-center text-2xl">
                 <span className="text-start">Розіграші подарунків від спонсорів заходу: </span>
-                <ul className="flex flex-col gap-10">
-                  <li className="flex justify-center">
-                    <Sponsor src="/s3.png" href="https://instagram.com/divna.official" />
-                  </li>
-                  <li className="flex justify-center">
-                    <Sponsor src="/s7.png" href="https://www.instagram.com/divas_shop.pl" />
-                  </li>
-                  <li className="flex justify-center">
-                    <Sponsor src="/s4.png" href="https://instagram.com/jznails_group" />
-                  </li>
-                  <li className="flex justify-center">
-                    <Sponsor src="/s5.png" href="https://instagram.com/staleks_polska" />
-                  </li>
-                  <li className="flex justify-center">
-                    <Sponsor
-                      src="/s8.png"
-                      href="https://www.instagram.com/sama_wraps?igsh=ZTZkbm9iMG9odWlv"
-                    />
-                  </li>
-                </ul>
+                <div className="flex flex-col items-center justify-start gap-8 py-8">
+                  {Sponsors.map((S, i) => (
+                    <S key={i} />
+                  ))}
+                </div>
               </div>
             </section>
             <section
@@ -207,15 +192,10 @@ export default function HomePage() {
                   Наші спонсори
                 </span>
               </h2>
-              <div className="mb-8 flex flex-wrap items-center justify-center gap-14 pb-2">
-                <Sponsor src="/s3.png" href="https://instagram.com/divna.official" />
-                <Sponsor src="/s5.png" href="https://instagram.com/staleks_polska" />
-                <Sponsor src="/s4.png" href="https://instagram.com/jznails_group" />
-                <Sponsor
-                  src="/s8.png"
-                  href="https://www.instagram.com/sama_wraps?igsh=ZTZkbm9iMG9odWlv"
-                />
-                <Sponsor src="/s7.png" href="https://www.instagram.com/divas_shop.pl" />
+              <div className="mb-8 flex flex-wrap items-center justify-center gap-14 py-8">
+                {Sponsors.map((S, i) => (
+                  <S key={i} />
+                ))}
               </div>
               <SpeakerDialog />
             </section>
@@ -258,8 +238,6 @@ export default function HomePage() {
             </section>
           </TracingBeam>
         </div>
-        {/* <div className="pointer-events-none absolute bottom-0 left-0 z-20 h-[750px] w-full rotate-180 bg-pattern bg-cover bg-center bg-no-repeat" /> */}
-        {/* <div className="pointer-events-none absolute bottom-0 left-0 z-20 h-[750px] w-full rotate-180 bg-stars bg-cover bg-center bg-no-repeat" /> */}
       </div>
     </main>
   );
