@@ -32,7 +32,15 @@ export const Reviews = () => {
       >
         {reviews.map((review) => (
           <SwiperSlide key={review}>
-            <Image src={review} alt="review" width={400} height={700} />
+            <Image
+              loading={"eager"}
+              priority={true}
+              src={review}
+              alt="review"
+              width={400}
+              height={700}
+              quality={100}
+            />
           </SwiperSlide>
         ))}
       </Swiper>

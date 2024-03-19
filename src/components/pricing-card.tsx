@@ -1,4 +1,5 @@
 import React from "react";
+import { BuyButton } from "./shadow-wrapper";
 
 // You might want to move this SVG to a separate file for cleaner code
 export const CheckIcon = () => (
@@ -16,60 +17,8 @@ export const CheckIcon = () => (
   </svg>
 );
 
-export const PricingCardRegular = () => (
-  <div
-    className="mx-auto flex max-w-lg flex-col rounded-2xl border border-emerald-900 bg-gradient bg-no-repeat p-6 text-center text-white shadow"
-    style={{
-      backgroundSize: "85% 75%",
-    }}
-  >
-    <h3 className="mb-4 text-4xl font-semibold">Обычный Билет</h3>
-    <div className="my-8 flex items-baseline justify-center">
-      <span className="mr-2 text-5xl font-extrabold">299</span>
-      <span className="text-gray-500 dark:text-gray-400">/zł</span>
-    </div>
-    <ul role="list" className="mb-8 space-y-4 text-left">
-      <li className="flex items-center space-x-3">
-        <CheckIcon />
-        <span>Вход на конференцию</span>
-      </li>
-      <li className="flex items-center space-x-3">
-        <CheckIcon />
-        <span>Кофе-брейк</span>
-      </li>
-      <li className="flex items-center space-x-3">
-        <CheckIcon />
-        <span>
-          <span className="bg-gradient-to-r from-pink-400 to-violet-300 bg-clip-text text-transparent">
-            Подарки{" "}
-          </span>
-          от спонсоров
-        </span>
-      </li>
-      <li className="flex items-center space-x-3 pl-[33px] text-gray-300 line-through">
-        <span>
-          <span className="bg-gradient-to-r from-pink-400 to-violet-300 bg-clip-text text-transparent">
-            Подарки{" "}
-          </span>
-          от организаторов
-        </span>
-      </li>
-      <li className="flex items-center space-x-3 pl-[33px] text-gray-300 line-through">
-        <span>Места в первых рядах</span>
-      </li>
-      <li className="flex items-center space-x-3 pl-[33px] text-gray-300 line-through">
-        <span>Обед со спикерами</span>
-      </li>
-      <li className="flex items-center space-x-3 pl-[33px] text-gray-300 line-through">
-        <span>Возможность лично пообщаться с крутыми экспертами в своей нише</span>
-      </li>
-    </ul>
-    <div className="w-30 flex h-10 items-center justify-center rounded-md bg-red-500">SOLD OUT</div>
-  </div>
-);
-
 export const PricingCardVIP = () => (
-  <div className="mx-auto flex max-w-lg flex-col rounded-3xl border border-pink-800  bg-gradient bg-cover p-6 text-center text-white shadow">
+  <div className="mx-auto flex max-w-lg flex-col rounded-3xl  bg-gradient bg-cover p-6 text-center text-white shadow">
     <h3 className="mb-4 bg-gradient-to-r from-pink-400 to-orange-500 bg-clip-text text-4xl font-semibold text-transparent">
       <span
         data-content={"Квиток"}
@@ -84,7 +33,10 @@ export const PricingCardVIP = () => (
       <span className="mr-2 text-5xl font-extrabold">429</span>
       <span className="text-gray-500 dark:text-gray-400">/zł</span>
     </div>
-    <ul role="list" className="mb-8 block space-y-4 bg-stars bg-no-repeat text-left">
+    <ul
+      role="list"
+      className="mb-8 block space-y-4 bg-stars bg-no-repeat text-left text-lg font-medium"
+    >
       <li className="flex items-center space-x-3">
         <CheckIcon />
         <span>Прохід на конференцію</span>
@@ -115,6 +67,6 @@ export const PricingCardVIP = () => (
         <span>Живий Nail-маркет від топових брендів</span>
       </li>
     </ul>
-    <div className="w-30 flex h-10 items-center justify-center rounded-md bg-red-500">Купити</div>
+    <BuyButton />
   </div>
 );

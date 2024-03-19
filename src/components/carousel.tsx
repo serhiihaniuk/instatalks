@@ -44,7 +44,7 @@ const HorizontalScrollCarousel = () => {
 
 const Card = ({ card }: { card: TCard }) => {
   return (
-    <div key={card.id} className="group relative h-full w-full overflow-hidden bg-neutral-200">
+    <div key={card.id} className="group relative h-full w-full overflow-hidden">
       <Image
         src={card.url}
         width={600}

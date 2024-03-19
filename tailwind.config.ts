@@ -109,6 +109,17 @@ export default {
             transform: "scale(1)",
           },
         },
+        tilt: {
+          "0%, 50%, 100%": {
+            transform: "rotate(0deg)",
+          },
+          "25%": {
+            transform: "rotate(0.5deg)",
+          },
+          "75%": {
+            transform: "rotate(-0.5deg)",
+          },
+        },
       },
       animation: {
         "gradient-background-1": "gradient-background-1 8s infinite",
@@ -119,6 +130,7 @@ export default {
         "gradient-foreground-3": "gradient-foreground-3 8s infinite",
         "r-360": "rotate-360 1225s infinite",
         "slow-scale": "slow-scale 1225s infinite",
+        tilt: "tilt 10s infinite linear",
       },
     },
   },

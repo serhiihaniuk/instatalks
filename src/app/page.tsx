@@ -10,6 +10,7 @@ import { TracingBeam } from "~/components/track";
 import Carousel from "~/components/carousel";
 import { Reviews } from "~/components/review";
 import SpeakerDialog from "~/components/dialog";
+import { BuyButton } from "~/components/shadow-wrapper";
 
 export default function HomePage() {
   return (
@@ -53,9 +54,9 @@ export default function HomePage() {
           <div className="flex flex-col text-center md:flex-row">
             <a
               href="#book"
-              className="mb-2 mr-2 rounded-lg border border-pink-500 px-5 py-2.5 text-sm font-medium text-white hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300"
+              className="mb-2 mr-2 rounded-lg px-5 py-2.5 text-lg text-white focus:outline-none focus:ring-4 focus:ring-gray-300"
             >
-              Забронювати
+              <BuyButton />
             </a>
           </div>
         </section>
@@ -192,7 +193,7 @@ export default function HomePage() {
               </div>
             </section>
 
-            <section className="align-center container relative  my-[95px] flex flex-col justify-center">
+            <section className="align-center container relative  mb-[20px] mt-[95px] flex flex-col justify-center">
               <h2 className="mb-1 text-center text-4xl font-bold md:text-4xl">
                 <span className="bg-gradient-to-r from-amber-500 to-rose-500 bg-clip-text text-transparent">
                   Наші спонсори

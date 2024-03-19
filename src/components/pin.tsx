@@ -6,9 +6,9 @@ import Image from "next/image";
 
 export function MapPin() {
   return (
-    <div className="flex h-[360px] w-[360px] items-center justify-center ">
+    <div className="flex h-[330px] w-[330px] items-center justify-center md:h-[400px] md:w-[400px] ">
       <PinContainer
-        className="h-[360px] w-[360px]"
+        className="h-[330px] w-[330px]"
         title="🗺️ Grzybowska 56, Warszawa"
         href="https://maps.app.goo.gl/6GR4TWbwjL9w6sfAA"
       >
@@ -36,9 +36,7 @@ export const PinContainer = ({
   className?: string;
   containerClassName?: string;
 }) => {
-  const [transform, setTransform] = useState(
-    "translate(-50%,-50%) rotateX(0deg)",
-  );
+  const [transform, setTransform] = useState("translate(-50%,-50%) rotateX(0deg)");
 
   const onMouseEnter = () => {
     setTransform("translate(-50%,-50%) rotateX(40deg) scale(0.8)");
@@ -49,10 +47,7 @@ export const PinContainer = ({
 
   return (
     <div
-      className={cn(
-        "group/pin relative z-50  cursor-pointer",
-        containerClassName,
-      )}
+      className={cn("group/pin relative z-50  cursor-pointer", containerClassName)}
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
     >
@@ -77,13 +72,7 @@ export const PinContainer = ({
   );
 };
 
-export const PinPerspective = ({
-  title,
-  href,
-}: {
-  title?: string;
-  href?: string;
-}) => {
+export const PinPerspective = ({ title, href }: { title?: string; href?: string }) => {
   return (
     <motion.div className=" z-[10] flex h-80 w-96 items-center justify-center opacity-0 transition duration-500 group-hover/pin:opacity-100">
       <div className=" inset-0 -mt-7 h-full w-full  flex-none">

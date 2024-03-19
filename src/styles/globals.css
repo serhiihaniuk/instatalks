@@ -27,7 +27,7 @@ footer {
 body .reviews .swiper-slide {
   background-position: center;
   background-size: cover;
-  width: 400px;
+  width: 310px;
   height: auto;
   display: flex;
   justify-content: center;
@@ -35,12 +35,25 @@ body .reviews .swiper-slide {
   background-color: transparent;
   border-radius: 35px;
 }
+@media (min-width: 425px) {
+  .reviews .swiper-slide {
+    width: 400px !important;
+  }
+}
+@media (min-width: 768px) {
+  .reviews .swiper-slide {
+    width: 500px !important;
+  }
+}
+.swiper-pagination-bullet {
+  background-color: #fff !important;
+}
 
 .reviews .swiper-wrapper {
   align-items: center;
 }
-.reviews .swiper-slide-shadow-coverflow {
-  border-radius: 35px;
+.swiper-slide-shadow-coverflow {
+  border-radius: 35px !important;
 }
 
 .swiper-slide img {
