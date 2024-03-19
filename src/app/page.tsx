@@ -75,7 +75,7 @@ export default function HomePage() {
                     {conferenceSpeakers.map((speaker) => {
                       return (
                         <li
-                          className="text-start text-base font-light text-gray-100"
+                          className="overflow-x-hidden text-start text-base font-light text-gray-100"
                           key={speaker.name}
                         >
                           <div className="text-lg font-bold text-white">
