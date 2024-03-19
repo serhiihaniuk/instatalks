@@ -114,10 +114,10 @@ export default {
             transform: "rotate(0deg)",
           },
           "25%": {
-            transform: "rotate(0.5deg)",
+            transform: "rotate(1deg)",
           },
           "75%": {
-            transform: "rotate(-0.5deg)",
+            transform: "rotate(-1deg)",
           },
         },
       },
@@ -130,7 +130,7 @@ export default {
         "gradient-foreground-3": "gradient-foreground-3 8s infinite",
         "r-360": "rotate-360 1225s infinite",
         "slow-scale": "slow-scale 1225s infinite",
-        tilt: "tilt 10s infinite linear",
+        tilt: "tilt 3s infinite linear",
       },
     },
   },
