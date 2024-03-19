@@ -9,6 +9,7 @@ import "swiper/css/pagination";
 
 // import required modules
 import { EffectCoverflow, Pagination } from "swiper/modules";
+import Image from "next/image";
 
 export const Reviews = () => {
   return (
@@ -31,7 +32,7 @@ export const Reviews = () => {
       >
         {reviews.map((review) => (
           <SwiperSlide key={review}>
-            <img src={review} alt="review" />
+            <Image src={review} alt="review" width={400} height={700} />
           </SwiperSlide>
         ))}
       </Swiper>
