@@ -32,13 +32,19 @@ export default function HomePage() {
       <div className="flex w-full flex-col gap-12 bg-[center_top_1rem] bg-no-repeat">
         <section className="container flex min-h-screen flex-col items-center justify-center gap-5 bg-top">
           <div className="mt-5">
-            <Image src="/main_logo.png" alt="" width={300} height={300} />
+            <Image
+              className="h-[150px] w-[300px]"
+              src="/main_logo.png"
+              alt=""
+              width={300}
+              height={150}
+            />
           </div>
           <h2 className="text-center text-[45px] font-bold text-white">2024</h2>
           <h1 className="text-center text-2xl font-normal text-white">
             Конференція для майстрів манікюру та педикюру!
           </h1>
-          <p className="max-w-[520px] px-5 text-center text-lg font-thin">
+          <p className="flex h-[200px] max-w-[520px] items-center justify-center px-5 text-center align-middle text-lg font-thin">
             Конференція на якій ти дізнаєшся останню, трендову інформацію нігтьового світу,
             надихнешся і піднімеш свої знання на новий рівень. Ми об'єднали найактуальніші теми, які
             не може пропустити жоден nail майстер.
