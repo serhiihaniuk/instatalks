@@ -24,11 +24,15 @@ section,
 footer {
   z-index: 15555;
 }
-body section .swiper-slide {
+body .reviews .swiper-slide {
   background-position: center;
   background-size: cover;
-  width: 300px;
-  height: 300px;
+  width: 400px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
 }
 
 .swiper-slide img {
