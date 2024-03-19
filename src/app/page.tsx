@@ -20,7 +20,7 @@ export default function HomePage() {
         backgroundRepeat: "no-repeat",
         backgroundPosition: "bottom",
       }}
-      className="w-max-[100vw] relative flex min-h-screen flex-col items-center justify-center pb-6 text-white "
+      className="w-max-[100vw]  relative flex min-h-screen flex-col items-center justify-center overflow-x-hidden pb-6 text-white md:overflow-x-auto "
     >
       <div className="pointer-events-none fixed inset-0">
         <div
