@@ -20,7 +20,7 @@ export default function HomePage() {
         backgroundRepeat: "no-repeat",
         backgroundPosition: "bottom",
       }}
-      className="w-max-[100vw]  relative flex min-h-screen flex-col items-center justify-center overflow-x-hidden pb-6 text-white md:overflow-x-auto "
+      className="w-max-[100vw]  relative flex min-h-screen flex-col items-center justify-center pb-6 text-white"
     >
       <div className="pointer-events-none fixed inset-0">
         <div
@@ -75,7 +75,7 @@ export default function HomePage() {
                     {conferenceSpeakers.map((speaker) => {
                       return (
                         <li
-                          className="overflow-x-hidden text-start text-base font-light text-gray-100"
+                          className="text-start text-base font-light text-gray-100"
                           key={speaker.name}
                         >
                           <div className="text-lg font-bold text-white">
@@ -113,7 +113,7 @@ export default function HomePage() {
                     </span>
                   </span>
                 </h2>
-                <div className="grid grid-rows-3 gap-5 pr-5">
+                <div className="grid grid-rows-3 gap-5">
                   {conferenceSpeakers.map((speaker) => {
                     return (
                       <Card
