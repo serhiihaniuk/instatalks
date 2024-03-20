@@ -22,7 +22,7 @@ export const conferenceSpeakers = [
   {
     name: "Оксана Іванцова",
     instagram: "https://www.instagram.com/ivantsovanails",
-    topic: "МК«Естетичний педикюр. Покриття плівками»",
+    topic: "Майстер-клас «Естетичний педикюр. Покриття плівками»",
     description:
       "Інструкторка міжнародного рівня. Учасниця і призерка міжнародних конкурсів. 13 років викладацької діяльності. Від самоучки до інструкторки топ-компанії  і школи Staleks Nail Center.",
     followersInstagram: 12700, // Инста 12,7к

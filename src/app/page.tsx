@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import Card from "~/components/card";
 import Image from "next/image";
-import { cn, formatSubscribers } from "~/utils";
+import { formatSubscribers } from "~/utils";
 import { PricingCardVIP } from "~/components/pricing-card";
 import { Sponsors } from "~/components/sponsor";
 import { conferenceSpeakers } from "~/speakers";
