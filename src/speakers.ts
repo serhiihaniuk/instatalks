@@ -40,7 +40,7 @@ export const conferenceSpeakers = [
   {
     name: "Ангеліна Рагоза",
     instagram: "https://www.instagram.com/angelina_nail_say",
-    topic: "МК «Безпечний манікюр. Чисті сінуси»",
+    topic: "Майстер-клас «Безпечний манікюр. Чисті сінуси»",
     description:
       'Організаторка конференції Nail Moment 2023 та Nail Moment 2024. Інструкторка швидкісного манікюру та засновниця руху "Дорога Манікюрниця"',
     followersInstagram: 8000, // Инста 8к
