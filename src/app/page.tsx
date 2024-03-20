@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import Card from "~/components/card";
 import Image from "next/image";
-import { formatSubscribers } from "~/utils";
+import { formatSubscribers, logoSrc } from "~/utils";
 import { PricingCardVIP } from "~/components/pricing-card";
 import { Sponsors } from "~/components/sponsor";
 import { conferenceSpeakers } from "~/speakers";
@@ -35,8 +35,8 @@ export default function HomePage() {
           <div className="mt-5">
             <Image
               className="h-[150px] w-[300px]"
-              src="/main_logo.png"
-              alt=""
+              src={logoSrc}
+              alt="abcde"
               width={300}
               height={150}
             />
