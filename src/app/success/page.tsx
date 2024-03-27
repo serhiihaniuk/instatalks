@@ -3,12 +3,11 @@ const ConferenceInfo = () => {
     <div className="grow">
       <div className="mx-auto mt-10 max-w-2xl rounded-lg bg-gray-900 p-8 text-gray-100 shadow-lg">
         <h2 className="mb-5 text-center text-xl font-semibold">
-          Добро пожаловать на конференцию Nail Moment 2023!
+          Вітаємо на конференції Nail Moment 2024!
         </h2>
         <div className="mb-6">
           <p className="mb-4">
-            Переходи в телеграм канал ⬇️ Там будет вся актуальная информация по
-            поводу конференции.
+            Переходь в телеграм канал ⬇️ Там буде вся актуальна інформація
             <a
               href="https://t.me/+NXNyzuGV84AxYzdk"
               className="ml-2 inline-block text-blue-500 hover:text-blue-300"
@@ -17,7 +16,7 @@ const ConferenceInfo = () => {
             </a>
           </p>
           <p>
-            Если будут вопросы пишите в поддержку ⬇️
+            Якщо будуть питання пиши нам в підтримку ⬇️
             <a
               href="https://t.me/+THVRcBRhyWc5OWY0"
               className="ml-2 inline-block text-blue-500 hover:text-blue-300"
@@ -31,7 +30,7 @@ const ConferenceInfo = () => {
             <span role="img" aria-label="Calendar">
               🗓
             </span>{" "}
-            26 ноября
+            28 Квітня
           </p>
           <p className="font-medium">
             <span role="img" aria-label="Clock">
@@ -43,13 +42,13 @@ const ConferenceInfo = () => {
             <span role="img" aria-label="Location">
               📌
             </span>{" "}
-            ADN Centrum Konferencyjne, Grzybowska 56, Warszawa
+            Centrum Konferencyjne WEST GATE, Grzybowska 56, Warszawa
           </p>
         </div>
         <div className="text-center">
-          <p className="mb-4">До встречи на Nail Moment 2023!</p>
-          <p className="text-sm text-gray-400">С уважением,</p>
-          <p className="text-sm text-gray-400">организаторы конференции.</p>
+          <p className="mb-4">До зустрічі на Nail Moment 2023!</p>
+          <p className="text-sm text-gray-400">З повагою,</p>
+          <p className="text-sm text-gray-400">Організатори конференції.</p>
         </div>
       </div>
     </div>
