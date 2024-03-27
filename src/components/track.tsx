@@ -50,14 +50,16 @@ export const TracingBeam = ({
     };
   }, [svgHeight]);
 
-  const y1 = useSpring(useTransform(scrollYProgress, [0, 0.8], [50, svgHeight]), {
+  const y1 = useSpring(useTransform(scrollYProgress, [0, 0.99], [50, svgHeight]), {
     stiffness: 500,
     damping: 90,
   });
-  const y2 = useSpring(useTransform(scrollYProgress, [0, 1], [50, svgHeight - 200]), {
+  const y2 = useSpring(useTransform(scrollYProgress, [0, 1], [50, svgHeight - 250]), {
     stiffness: 500,
     damping: 90,
   });
+
+  console.log({ y1, y2 });
 
   return (
     <motion.div ref={ref} className={cn("relative mx-auto h-full w-full max-w-4xl", className)}>
