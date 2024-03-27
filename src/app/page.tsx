@@ -52,12 +52,9 @@ export default function HomePage() {
           </p>
           <h3 className="text-center text-xl font-normal text-white">28 квітня у Варшаві</h3>
           <div className="flex flex-col text-center md:flex-row">
-            <a
-              href="#book"
-              className="mb-2 mr-2 rounded-lg px-5 py-2.5 text-lg text-white focus:outline-none focus:ring-4 focus:ring-gray-300"
-            >
+            <span className="mb-2 mr-2 rounded-lg px-5 py-2.5 text-lg text-white focus:outline-none focus:ring-4 focus:ring-gray-300">
               <BuyButton />
-            </a>
+            </span>
           </div>
         </section>
 

@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 .triangle {
   --yellow: rgba(255, 206, 32, 0.8);
   --red: rgba(197, 0, 0, 0.8);
@@ -16,6 +17,7 @@
     transparent 1turn
   );
 }
+
 .glow-box {
   box-shadow: 0 0 30px 5px #0ff;
 }
@@ -24,6 +26,7 @@ section,
 footer {
   z-index: 15555;
 }
+
 body .reviews .swiper-slide {
   background-position: center;
   background-size: cover;
@@ -35,16 +38,19 @@ body .reviews .swiper-slide {
   background-color: transparent;
   border-radius: 35px;
 }
+
 @media (min-width: 425px) {
   .reviews .swiper-slide {
     width: 400px !important;
   }
 }
+
 @media (min-width: 768px) {
   .reviews .swiper-slide {
     width: 500px !important;
   }
 }
+
 .swiper-pagination-bullet {
   background-color: #fff !important;
 }
@@ -52,6 +58,7 @@ body .reviews .swiper-slide {
 .reviews .swiper-wrapper {
   align-items: center;
 }
+
 .swiper-slide-shadow-coverflow {
   border-radius: 35px !important;
 }
@@ -71,4 +78,11 @@ body .reviews .swiper-slide {
 .swiper.prev .swiper-slide {
   height: 100%;
   width: 100%;
+}
+
+a {
+  border: 2px solid green;
+}
+a div {
+  border: 2px solid red;
 }

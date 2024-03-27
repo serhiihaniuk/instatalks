@@ -1,4 +1,3 @@
-import { type FC } from "react";
 import Image from "next/image";
 
 export const Divna = () => {
@@ -85,7 +84,25 @@ export const DreamStudioReklamy = () => {
   );
 };
 
-export const Sponsors = [Divna, Staleks, JzNails, SamaWraps, DivasShop, DreamStudioReklamy];
+export const Fox = () => {
+  return (
+    <a
+      className="h-min-[100px] relative block"
+      href="https://www.instagram.com/f.o.x_nails_poland"
+      target="_blank"
+    >
+      <Image
+        src="/s11.png"
+        className="max-h-[225px] min-h-[100px] max-w-[300px] object-contain"
+        alt=""
+        width={300}
+        height={200}
+      />
+    </a>
+  );
+};
+
+export const Sponsors = [Divna, Staleks, JzNails, SamaWraps, DivasShop, DreamStudioReklamy, Fox];
 
 /*
 <Sponsor src="/s3.png" href="https://instagram.com/divna.official" />
