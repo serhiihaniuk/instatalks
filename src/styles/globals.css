@@ -79,10 +79,3 @@ body .reviews .swiper-slide {
   height: 100%;
   width: 100%;
 }
-
-a {
-  border: 2px solid green;
-}
-a div {
-  border: 2px solid red;
-}
