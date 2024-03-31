@@ -1,4 +1,3 @@
-// @ts-ignore
 import { type NextRequest, NextResponse } from "next/server";
 import { type Speaker, getSpeakers, addSpeaker } from "~/db";
 
