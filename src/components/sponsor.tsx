@@ -102,16 +102,12 @@ export const Fox = () => {
   );
 };
 
-export const Sponsors = [Divna, Staleks, JzNails, SamaWraps, DivasShop, DreamStudioReklamy, Fox];
-
-/*
-<Sponsor src="/s3.png" href="https://instagram.com/divna.official" />
-<Sponsor src="/s5.png" href="https://instagram.com/staleks_polska" />
-<Sponsor src="/s4.png" href="https://instagram.com/jznails_group" />
-<Sponsor
-  src="/s8.png"
-  href="https://www.instagram.com/sama_wraps?igsh=ZTZkbm9iMG9odWlv"
-/>
-<Sponsor src="/s7.png" href="https://www.instagram.com/divas_shop.pl" />
-<Sponsor src="/s9.png" href="https://www.instagram.com/dream.studioreklamy?igsh=MW44emZ4OW11OHo2dA=="
-*/
+export const Sponsors = [
+  <Divna key={1} />,
+  <Staleks key={2} />,
+  <JzNails key={3} />,
+  <SamaWraps key={4} />,
+  <DivasShop key={5} />,
+  <DreamStudioReklamy key={6} />,
+  <Fox key={7} />,
+];

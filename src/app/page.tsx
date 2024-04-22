@@ -11,6 +11,7 @@ import Carousel from "~/components/carousel";
 import { Reviews } from "~/components/review";
 import SpeakerDialog from "~/components/dialog";
 import { BuyButton } from "~/components/shadow-wrapper";
+import { Faq } from "~/components/faq";
 
 export default function HomePage() {
   return (
@@ -136,9 +137,7 @@ export default function HomePage() {
               <div className="flex max-w-full flex-col gap-2 px-5 text-center text-2xl md:max-w-[500px]">
                 <span className="text-start">Розіграші подарунків від спонсорів заходу: </span>
                 <div className="flex flex-col items-center justify-start gap-8 py-8">
-                  {Sponsors.map((S, i) => (
-                    <S key={i} />
-                  ))}
+                  {Sponsors}
                 </div>
               </div>
             </section>
@@ -197,9 +196,7 @@ export default function HomePage() {
                 </span>
               </h2>
               <div className="mb-8 flex flex-wrap items-center justify-center gap-14 py-8">
-                {Sponsors.map((S, i) => (
-                  <S key={i} />
-                ))}
+                {Sponsors}
               </div>
               <SpeakerDialog />
             </section>
@@ -208,6 +205,9 @@ export default function HomePage() {
             </section>
             <section>
               <Carousel />
+            </section>
+            <section>
+              <Faq />
             </section>
             <section className="container grid grid-rows-1 items-center justify-center justify-items-center gap-5 px-5 md:pt-12 ">
               <div className="mt-5 flex max-w-[320px] flex-col items-center justify-center gap-2 self-start md:mt-0 md:max-w-[500px]">
